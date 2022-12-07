@@ -1,0 +1,58 @@
+'''
+projeto miaudade
+___________________________________________________________________________________________________________________
+
+ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ ᘛ⁐ᕐᐷ
+personagens furry gatos 
+
+nomear cidade (não vai ser miaudade)
+
+historia: O exercito do rei rato (requeijao(soa rei queijão)) invadiu a <nome da cidade> e expulsou os gatos de sua casa,
+os gatos foram levados a viver no esgoto para se esconder da tirania do rei e perderam a esperança e a vontade de lutar (dava pra dormir no esgoto)
+mas inconformado com a nova vida, um jovem gato chamado pudim s ergue para retomar a cidade. 
+O unico gato capaz de vencer todos os ratos é o mago bola de pelos que foi preso em uma torre que bloqueia sua magia e 
+cercado de guardas, o jogador precisa levar ingredientesespeciais para o mago e liberta-lo  
+(o jogador precisa ir em 4 lugares para buscar os ingredientes)
+
+    gatinho principal = (=^‥^=)
+        nome: pudim
+        idade: 1 anos(idade gato)/15 anos (idade humano)
+        missão: resgatar o gato mago (prisioneiro) bola de pelo e coletar os 4 ingredientes
+
+nomesNpc: mago bola de pelos, comerciante sra. pompom, sábio sr. bigodes
+
+nomesMontros: soldados ratos (insignificantes para ter nomes), rato italiano, pombo misterioso, (na mina: charada)
+
+nomesIngredientes: flor ancestral, massa sagrada, pena suja (eca), cristal reluzente
+
+lugares: floresta macabra, cada de italiano,  mina decadente, torre, cidade, loja, esgoto
+
+coisas necessarias:
+    escreva e leia
+    se, senao
+    e/ou
+    valores aleatorios
+    escolha
+    enquanto
+    para
+    vetor
+    4 fluxogramas (4 estruturas aleatorias)
+
+-Iza
+Ordem dos fatos: 
+    -texto inicial com apresentação da historia e do personagem > 
+    -menu com inventario e mapa (apenas alguns lugares liberados)
+O jogador pode matar inimigos com menu de atacar e de se esconder, a cada jogada é sorteado um numero de 1 a 20 que define o quão sucedido bem 
+sucedida foi a ação.  
+    -Aparecerão inimigos no caminho até a Torre, o jogador pode tentar passar despercebido ou atacar. 
+    -Após chegar na torre de libertar o mago
+    (roubar as chaves de algum rato), aparece texto com missão e o jogador é levado ao esgoto novamente.  
+    -Novos lugares são liberados no mapa: a floresta, a casa de italiano, e a mina abandonada, 
+    -deve ser encontrado em cada lugar respectivamente:
+        +uma flor, 
+        +um pouco de massa e 
+        +um cristal, 
+        +além de uma pena (pega de um pombo, o jogador tem algumas oportunidades para pega-la). 
+    -Após isso o jogador deve retornar com todas os itens ao esconderijo e entrega-los ao mago (que juntará todos e fará o queijo irresistivel),
+    -levando os ratos para longe.
+'''
