@@ -173,14 +173,118 @@ Floresta Macabra
     Ele sente uma vontade repentina de subir uma árvore, mas se controla. É quando ele nota, parado num galho, um pombo distraído!
     Dar o bote?
     (1-sim\2-não)
-    1-Você pula no pombo e arranca uma pena.
+    1 - Você pula no pombo e arranca uma pena.
     Pombo
         *Ei, o que pensa que tá fazendo? Prometo que vou te processar, seu gato imundo!
     O Pombo parece bravo. Ele sai voando para longe.
-    2-Você não faz nada. Parece uma oportunidade desperdiçada.
-    Pudim continua o seu caminho pela floresta
+    2 - Você não faz nada. Parece uma oportunidade desperdiçada.
+
+    Pudim continua o seu caminho pela floresta, passando entre as arvores enquanto procura a flor até que encontra um Soldado Rato no caminho!
+    Ele parece distraido cortando lenha, o que fazer?
+    (1-ataque\2-passar despercebido)
+    1 - Você pula no inimigo, o atacando de surpresa! (luta)
+        ...O rato cai derrotado, Pudim segue em frente novamente! (sucesso)
+    2 - Você tenta se camuflar nas árvores e passar despercebido...
+        ...Mas Pudim é branco! O rato percebe sua presença e te ataca! (luta)
+        ...E mesmo Pudim sendo branco, o rato é dautônico! Pudim passa de fininho e avança!
+    
+    Pudim anda por o que parecem horas para suas perninhas curtas de gatinho, até que, num caminho ingrime e escuro, ele vê,
+    iluminada por um unico feiche de luz que corta pela copa das árvores, a Flor Ancestral! Pudim pula em sua direção, porém!
+    (DinoPlanta)
+    A lendária Dinoplanta se ergue do chão! (luta)
+    A Dinoplanta mítica de lenda cai derrotada de volta ao chão! Você segura a lor Ancestral em suas patas
+    (Pudim pegou a Flor Ancestral!)
+    Pudim
+        *Tudo bem! Mais {numero de ingredientes faltando} pra pegar! Miau!
+        (se for o ultimo ingrediente):
+        *Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!
 
 Mina Decadente
+    Pudim corre até a Mina nos arredores de Miaudade. 
+    As lendas sobre os perigos da Mina, há muito tempo abandonada pelos gatos, arrepiam os pelos do felino, enquanto ele adentra a mina.
+    Não há sequer uma luz fraca em vista. As paredes da caverna ecoam com os passos leves das patas do Pudim. 
+    o gato segue bravamente pela mina sombria, seus olhos felinos escaneando minuciosamente através da escuridão porém, nenhum 
+    objeto reluzente é encontrado aqui, somente varias e varias placas espalhadas pelos cantos, todas escrito "PERIGO!".
+    
+    Pudim as ignora e segue em frente, determinado a encontrar o Cristal. Seu caminho é livre, apenas pequenos insetos e animais rastejantes
+    aparecendo no caminho, que se amedrontam ao ver o gato e fogem. De repente, ao tomar uma esquina dentro do labirinto de cavernas da mina
+    ele finalmente avista uma formação de cristais, ilhados no centro de um pequeno lago num grande espaço.
 
+    Pudim
+        *Rum... água... por você, Miaudade!
+
+    Pudim dá o maior salto de sua vida, passando com sua elegância felina por cima da água. Os cristais em sua frente são bonitos, e brilham
+    com uma luz que ilumina os arredores, porém, ele só precisa de um no momento (talvez ele volte para pegar mais e guardar como brinquedo
+    para uso futuro). Pudim usa sua espada para quebrar um pedaço do cristal.
+    (Pudim pegou o Cristal Reluzente)
+    Pudim
+        *Tudo bem! Só mais {numero de ingredientes faltando} pra pegar! Miau!
+        (se for o ultimo ingrediente):
+        *Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!
+    Pudim pula de volta ao outro lado, e segue para a saída... até que o chão em baixo de suas patas começa a tremer! Pudim olha para trás
+    e vê...
+    (Monstro Cristalino - desenho)[nome pode mudar]
+    O que antes era uma ilha com uma formação de cristais, se ergue do lago e se revela como um grande monstro, com cristais descendo por
+    suas costas! (luta)
+    Pudim permanece de pé, como o vitorioso da grande batalha! (sucesso)
+    Pudim deixa o monstro para trás, se retirando da Mina de uma vez por todas.
 
 Casa de Italiano
+    Pudim faz seu caminho até a casa misteriosa ao lado da Torre, num primeiro olhar discreta, porém ao pular pela janela e ver o interior,
+    ele percebe, claramente, que é uma casa de italiano. Quadros de queijos, lasanhas e pizzas decoram a casa junto aos papeis de parede
+    de tipos diferentes de macarrão. A casa parece vazia entretanto, talvez o dono estava fora num restaurante? Pudim pula para dentro e
+    começa a procurar a Massa Sagrada.
+
+        *Ei, quem tá aí? Woof!
+
+    Uma voz latida corre de uma porta (há uma placa nela, escrito "Quarto")! Pudim corre para se esconder, se jogando atrás de um sofá
+    (com estampa de macarronada) e observando a figura que surge.
+
+    (Italiano - desenho)
+
+    Doguitaliano
+        *Quem tá aqui? Mi Familia não gosta de intrusos!
+        *Woof... tentando se esconder? Saiba que nós cãos italianos temos o mais apurado elfato do reino animal!
+
+    O Doguitaliano se prepara para farejar o intruso (você), o que fazer?
+    (1-Atacar\2-Tentar passar despercebido)
+    1-Pudim avança contra o cão excêntrico, pulando para cima dele antes que farejasse sua posição! Ataque surpresa! (luta)
+        Doguitaliano
+            *Oh, mamma mia, se não é um gato nojento! Veio virar parte da minha receita suprema, felino? Woof Woof!
+        Pudim
+            *Só se estiver fazendo um doce, Miau! Tenho certeza que tenho gosto de Pudim!
+        Doguitaliano
+            *Pudim, é? Tudo bem, não sou contra comidas agridoces, Woof! Minha receita secreta estará completa com você nela!
+        Pudim
+            *Receita? Por acaso teria um Massa Sagrada nessa sua receita?
+        Doguitaliano
+            *Mamma mia! Não esperava que um gato inculto como o próprio conheceria de culinaria! Pois é claro, é a receita que
+            mudará o mundo, e usará da grande Massa Sagrada como fundamento.
+        Pudim
+            *Miau! Nesse caso, passe pra cá!
+        Doguitaliano
+            *Woof Woof! Não vai ser tão fácil assim, Pudim!
+        (luta começa)
+        (sucesso)
+            Doguitaliano
+                *Arf... Arf... Droga! Diga, felino, você vai mesmo roubar a Massa Sagrada?
+            Pudim
+                *Sim! Pelo bem de Miaudade, preciso dela para levar os ratos para longe!
+            Doguitaliano
+                *Arf... nesse caso... me prometa, Pudim, que ira fazer uma receita que faz juz à culinária italiana!
+            Pudim
+                *Rum... Prometo, Dogui! Miau!
+            
+            Doguitaliano desmaia, você prossegue para o "Quarto".
+    2-Pudim tenta passar de fininho pelo cão...
+        ...mas Pudim cheira a pudim! é forte demais para passar pelo fucinho apurado do Doguitaliano! (luta)
+        ...mas o cheiro delicioso de algo no forno atrapalha o fucinho do cão! Você foge para o "Quarto"! (sucesso)
+
+    Pudim adentra o "Quarto", e logo percebe que é uma cozinha, com uma casinha de cachorro em um dos cantos.
+    Sobre uma bancada ele avista a Massa Sagrada, quentinha e apetitosa. Ele a segura, o cheiro delicioso entrando em seu fucinho.
+    Ele controla a vontade de experimentar e a guarda.
+    (Pudim conseguiu a Massa Sagrada!)
+    Pudim
+            *Tudo bem! Só mais {numero de ingredientes faltando} pra pegar! Miau!
+        (se for o ultimo ingrediente):
+            Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!
