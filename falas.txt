@@ -125,4 +125,62 @@ Começo
     Gato Mago Bola de Pelos
         *Hmm... a situação aparenta mais critica do que imaginei...
         *Pudim, poderia me levar ao Miauderijo?
-    
+        
+Ingredientes
+    Pudim leva o velho Bola de Pelos até o Miauderijo, onde a dupla se reune com o Sabio Sr. Bigodes
+    Gato Sábio Sr. Bigodes
+        *É muito bom vê-lo saudável, ó grande mago!
+    Gato Mago Bola de Pelos
+        *Por favor, podem me chamar de Bola de Pelos...
+        *...ou Bolinha...
+    Pudim
+        *Tudo bem Bolinha, diz pra nós, como se livrar daqueles ratos!
+    Sr. Bigodes
+        *Ei, não chame o grande mago de Bolinha!
+    Bola de Pelos (Bolinha)
+        *Eu tenho um plano, Pudim e Sr. Bigodes! Um feitiço que os levará para longe!
+    Pudim
+        *Ótimo Bolinha, Então faça logo sua magia!
+    Bola de Pelos
+        *Tudo em seu tempo, Pudim... o feitiço é grande e poderoso, por isso... vou precisar de ingredientes especiais!
+    Pudim
+        *Rum... lá vem.
+    Bola de Pelos
+        *Pudim, preciso que você recolha para mim os ingredientes mais poderosos dessa cidade!
+        *A Flor Ancestral na Floresta Macabra
+        *O Cristal Reluzente, da Mina Decadente
+        *Uma Pena de uma grande ave.
+        *E por último, a Massa Sagrada...
+    Pudim
+        *...
+    Bola de Pelos
+        *...
+    Pudim
+        *Ei! E essa tal de massa, você não falou onde que eu encontro essa aí!
+    Bola de Pelos
+        *Sinto que não terei a resposta para essa pergunta... mas talvez, o Grande Gato Sábio a tenha?
+    Sr. Bigodes
+        *Hummm... parece que com a vinda dos ratos, uma figura... estrangeira... se alocou em uma das casas
+        *Um italiano... talvez possua a massa que procura.
+    Pudim
+        *Miau! Tenho minha missão! Obrigado vovô e Bolinha! 
+    Pudim salta para fora do Miauderijo, voltando à sua aventura.
+
+    (abre o mapa, agora com todas as áreas liberadas)
+
+Floresta Macabra
+    Pudim adentra a floresta, uma densa vegetação ao seu redor. 
+    Ele sente uma vontade repentina de subir uma árvore, mas se controla. É quando ele nota, parado num galho, um pombo distraído!
+    Dar o bote?
+    (1-sim\2-não)
+    1-Você pula no pombo e arranca uma pena.
+    Pombo
+        *Ei, o que pensa que tá fazendo? Prometo que vou te processar, seu gato imundo!
+    O Pombo parece bravo. Ele sai voando para longe.
+    2-Você não faz nada. Parece uma oportunidade desperdiçada.
+    Pudim continua o seu caminho pela floresta
+
+Mina Decadente
+
+
+Casa de Italiano
