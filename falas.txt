@@ -1,0 +1,128 @@
+Introdução
+    Os gatos viviam felizes há muito tempo em Miaudade, onde 
+    tinham comida e camas quentinhas para dormirem o dia todo.
+    Um dia, os soldados do Rato Reiqueijão invadiram e ocuparam
+    a cidade, expulsando todos os gatos. O Rei Rato sabia que 
+    o único felino que poderia tira-lo do poder era o Mago Bola
+    de Pelos, e então, por medo ele o aprisionou em uma torre
+    perto da Floresta Macabra. Os gatos felizmente conseguiram 
+    construir um esconderijo não muito longe da cidade, onde
+    também haviam camas quentinhas, por isso muitos gatos perderam
+    a vontade de lutar e decidiram continuar se escondendo...
+
+Começo
+    Inúmeros gatinhos dormem silenciosamente (e preguiçosamente) no Miauderijo...
+    Enquanto isso, um felino solitario se levanta
+    .
+    .
+    .
+    Pudim
+        *Rum... não vou ficar parado aqui... Miau!
+    Pudim pula por cima dos outros gatos e corre até a saida do seu abrigo.
+
+    Gato Sábio Sr. Bigodes
+        *Espere, Pudim! 
+    Pudim
+        *Vô Bigodes! Não tente me deter vovô... alguém precisa fazer algo!
+    Gato Sábio Sr. Bigodes
+        *Eu sei Pudim... e precisamos que seja você!
+    Pudim
+        *O que?--
+    Sr. Bigodes
+        *Os outros gatinhos são preguiçosos demais! 
+        *Você acabou de completar 1 ano, (15 Anos em idade felina), e ainda
+        está cheio de energia. Só você pode nos salvar, Pudim...
+    Pudim
+        *Hmm... bem, nesse caso, já tô de partida-
+    Sr. Bigodes
+        *Espere, Pudim!
+        .
+        .
+        .
+        *É perigoso demais ir desequipado... Tome isso.
+    (Pudim recebeu a Espada Velha)
+        *Use isso, e salve o Grande Gato Mago, o ilustre Bola de Pelos!
+        Ele é a nossa esperança, o único poderoso o suficiente para se livrar
+        dos ratos!
+    Pudim
+        *Então... tenho que resgatá-lo! Sei que o prenderam nas masmorras da Grande Torre!
+        *Obrigado vovô, tenho minha missão! Me deseje sorte...
+    O corajoso Pudim salta para fora, iniciando sua aventura.
+
+    (Mapa aparece, apenas a torre pode ser escolhida)
+    Pudim põe suas patas para bom uso, correndo até Miaudade. Dentro da cidade, ele se depara
+    com varios Soldados Ratos, os lacaios do Reiqueijão. O que fazer?
+
+    (1-Atacar\2-Passar despercebido)
+    1-Você encara de frente os inimigos com sua espada em mãos... (luta)
+        O Pudim segue em frente, deixando os inimigos derrotados para trás! (sucesso)
+    2-Você tenta passar de fininho pelos ratos, dando passos leves...
+        ...Mas se distrai com uma borboleta! Tentativa falha! (luta)
+        ...e os deixa pra trás, sem nem saberem que esteve ali! (sucesso)
+    Pudim
+        *Moleza!
+    
+    O resto do caminho até a Torre é livre. Pudim abre suas grandes portas (com dificuldade, por não ter dedos)
+    e começa a procurar a entrada para a masmorra. Há dois caminhos na sua frente...
+    (1-Esquerda\2-Direita)
+
+    1-Pudim segue um longo corredor, se distraindo momentaneamente quando vê um mosquito. 
+    Ele encontra um grande rato, dormindo, porém ao seu lado tem um objeto dourado brilhante. Pudim quer o objeto brilhante.
+    O que fazer?
+        (1-Atacar\2-Tentar pegar despercebido)
+        1-Você ataca o inimigo enquanto ele dorme. Golpe Baixo! (luta)
+            O inimigo dorme de novo (por outro motivo dessa vez). Você se sente um pouco culpado.
+        2-Você dá pulinhos e anda de fininho, até o rato...
+            ...mas tropeça no próprio rabo! Tentativa falha, o rato acordou! (luta)
+            ...e fácilmente pega o objeto do seu lado, afinal, ele estava dormindo!
+        Com ele em mãos, você percebe que o objeto brilhante é na verdade uma chave. Ele não parece brilhar tanto assim mais
+        (Pudim encontrou a Chave)
+        Você retorna pelo corredor, até a sala que estava antes. O que fazer? (2-Direita)
+    2-Pudim segue abaixo por uma escada, alguns lances depois ele se surpreende ao dar de cara com um enorme rato, que o vê
+    antes que Pudim pudesse reagir.
+    Ratão
+        *O que é isso, um gato? Achei que vocês tinham levado seus rabos entre as pernas pra aquele muquifo!
+    Pudim
+        *Não fale mal do Miauderijo! Agora, me diga logo onde esta o Bola de Pelos!
+    Ratão
+        *Escuta aqui, eu sou o guarda da masmorra! 
+        Não vou deixar você soltar o Bola de Pelos que está depois dessa porta atrás de mim!
+    Pudim
+        *Haha! Você acabou de me contar onde ele está, seu dentuço sujismundo!
+    Ratão
+        *O que? Droga!!... quer dizer... Foi de proposito!
+        Te falei, porque sei que você não vai passar de mim, bichano! Devia ter ficado no muquifo!
+    Pudim
+        *Rum... Já disse pra não falar mal do Miauderijo!
+        (luta)
+    O Ratão cai desacordado, abrindo espaço para a porta atrás dele.
+    if pudim não tem chave:
+        Mas a porta está trancada! Hum, onde será que está a chave?
+        Você retorna, subindo a escada para a sala que estava antes.
+    pudim tem chave:
+        Você usa a Chave!
+        Pudim desce o resto das escadas até que, no final, encontra uma única cela. 
+        A Chave parece caber nessa fechadura também...
+        Abrir?...
+    
+    Pudim
+        *Vim resgatar você, Bola de Pelos, Miau!
+    Um gato velinho, segurando um grande cajado, surje das sombras da cela.
+    Gato Mago Bola de Pelos
+        *Veja só, se não é Pudim...
+    Pudim
+        *...
+    Gato Mago Bola de Pelos
+        *...
+    Pudim
+        *...
+    Gato Mago Bola de Pelos
+        *Então... por que interrompeu minha soneca, Pudim?
+    Pudim
+        *Eu vim te resgatar, velho caduco!... quer dizer, Mago Bola de Pelos!
+        *Os ratos tomaram conta da nossa cidade, e os gatos de Miaudade foram exilados
+        pro Miauderijo! Precisamos da sua ajuda.
+    Gato Mago Bola de Pelos
+        *Hmm... a situação aparenta mais critica do que imaginei...
+        *Pudim, poderia me levar ao Miauderijo?
+    
