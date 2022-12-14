@@ -142,7 +142,7 @@ data.animar('Abrir?\n1-Abrir           2-Não abrir')
 escolha = int(input())
 data.clear()
 match escolha:
-    case 2:
+    case 1:
         data.falas('pudim', 'Pudim', 'Vim resgatar você, Bola de Pelos, Miau!')
         data.animar('Um gato velinho, segurando um grande cajado, surje das sombras da cela.')
         input()
@@ -155,3 +155,14 @@ match escolha:
         data.falas('pudim', 'Pudim', 'Eu vim te resgatar, velho caduco!... quer dizer, Mago Bola de Pelos!\n Os ratos tomaram conta da nossa cidade, e os gatos de Miaudade foram exilados pro Miauderijo! Precisamos da sua ajuda.')
         data.falas('gatomago', 'Mago Bola de Pelos', 'Hmm... a situação aparenta mais critica do que imaginei...\n Pudim, poderia me levar ao Miauderijo?')
         data.sleep (2.0)
+    case 2:
+        data.animar('Pudim repensa a jornada em sua frente. O chamado a ação, os desafios que o encontrariam se continuasse a seguir aquele caminho.\
+        \n"Por que eu?" ele pensa, indignado. Ele joga a chave no chão, e retorna pelo mesmo caminho que veio, sem olhar para trás. Pudim\
+        \nfoge de Miaudade, não passando no Miauderijo para se despedir de seu avô ou de nenhum dos outros gatos.')
+        input()
+        data.clear()
+        data.animar('A grandiosa hístoria de Pudim, e o ato valente que ele fez que com certeza teria mudado o rumo dos gatos de todo o mundo, nunca\
+        \nse realizou para que um dia fosse contada. Nunca mais ouviram falar do Pudim novamente.')
+        input()
+        data.clear()
+        data.animar('Fim.')
