@@ -1,8 +1,10 @@
+#importaçaoes importadas 
 from os import system
 from time import sleep
 import sys
+import random
 
-#utilidades--------------------------------------------------------------------------------------------------------------------
+#utilidades-------------------------------------------------------------------------------------------------------------------------
 def clear(): system('cls') #função que limpa a tela do terminal
 
 def valInt(texto): #valInt: função que valida um input int (para menus e opçoes e etc) (use como se fosse um input normal)
@@ -50,33 +52,101 @@ if temFlor == True or temPena == True or temCristal == True or temMassa == True:
 
 ingredientesFalta = 4 - ingredientes
 
+#sistemas-------------------------------------------------------------------------------------------------------------------------
 
+#lutinha piu piu piu kabum
+
+def sorteAtaque():
+    listaDano = [0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2.5, 2.5, 2.5, 2.5, 2.5, 3, 3, 3, 3, 4]
+    dadinho = (random.randint(0,19))
+    if temAmuleto == False:
+        animar('Sua sorte foi: ')
+        print(dadinho)
+    else:
+        dadinho = dadinho + 2
+        animar('Sua sorte foi: ')
+        print(dadinho)
+    sleep(0.05)
+    dano = listaDano[dadinho]
+    animar('Seu dano foi: ')
+    print(dano)
+    return dano
+
+#uiui covarde fugir
+
+def sortefuga():
+    listafug = [False, True]
+    dadinho = (random.randint(0,19))
+    if temAmuleto == False:
+        animar('Sua sorte foi: ')
+        print(dadinho)
+    else:
+        dadinho = dadinho + 2
+        animar('Sua sorte foi: ')
+        print(dadinho)
+    if dadinho >= 9:
+        fug = listafug[1]
+    else:
+        fug = listafug[0]
+    if fug == True:
+        animar('Sucesso!')
+    else:
+        animar('Falha!')
+    return fug
+
+def ataquePudim():
+    
+    pass
+def ataqueInimigo(inimigo):
+
+    pass
 #menus-------------------------------------------------------------------------------------------------------------------------
 
 def chamarMapaInicial():
     mapaTxt = open("txtes\mapainicial.txt", 'r', encoding='utf-8')
     print(mapaTxt.read())
-    mapaOpcao = valInt("Insira onde quer ir: ")
-    match mapaOpcao:
-        case 1:
-            pass
-        case 2:
-            pass
-        case 3:
-            pass
-        case 4:
-            pass
-        case 5:
-            pass
-        case _:
-            pass
+    while True:
+        mapaOpcao = valInt("Insira onde quer ir: ")
+        match mapaOpcao:
+            case 0:
+                animar("Não é hora de voltar ainda!")
+                input()
+                clear()
+                continue
+            case 1:
+                clear()
+                import torre
+            case 2:
+                animar('Você tem que resgatar o Grande Mago, foco!')
+                input()
+                clear()
+                continue
+            case 3:
+                animar('Você tem que resgatar o Grande Mago, foco!')
+                input()
+                clear()
+                continue
+            case 4:
+                animar('Você tem que resgatar o Grande Mago, foco!')
+                input()
+                clear()
+                continue
+            case 5:
+                animar('Você tem que resgatar o Grande Mago, foco!')
+                input()
+                clear()
+                continue
+            case _:
+                animar('Opção inválida')
+                input()
+                clear()
+                continue
 
-
-def menu_luta(chamadaInimigo, txt): #menu principal quando começam encontros com inimigos
+def menu_luta(inimigo, txt): #menu principal quando começam encontros com inimigos
     clear()
     while True:
         dotArt(txt)
-        animar(chamadaInimigo)
+        animar(inimigo['chamada'])
         print(f"\n----------------------------------\
         \n1 - Atacar\
         \n2 - Pudim\
@@ -84,16 +154,30 @@ def menu_luta(chamadaInimigo, txt): #menu principal quando começam encontros co
         menuOpcao = valInt("Insira opção: ")
         match menuOpcao:
             case 1:
-                pass
-                #sistema_ataque(chamadaInimigo) #pra que se possa retornar pro menu anterior, a função do proximo tem q levar argumentos anteriores
+                while inimigo['hp'] >= 0:
+                    animar("Pudim prepara sua espada para um golpe!")
+                    input('Pressione Enter para atacar!')
+                    sleep(0.25)
+                    dano = sorteAtaque()
+                    if dano <= 0:
+                        animar("Erro crítico! Pudim erra o inimigo!")
+                    elif dano >= 4:
+                        animar("Acerto crítico! Pudim acerta em cheio!")
+                    inimigo['hp'] -= dano
+                    animar(f"O HP do {inimigo['nome']} é {inimigo['hp']}!")
+                animar('Sucesso!')
+                break        
             case 2:
-                pudim(chamadaInimigo, txt)
+                pudim(inimigo, txt)
+            case 3: 
+                dotArt(txt)
+                print('')
             case _:
                 input("Opção inválida. Pressione Enter para voltar... ")
                 continue
 
 
-def pudim(chamadaInimigo, txt = None): #menu do inventario do pudim
+def pudim(inimigo, txt = None): #menu do inventario do pudim
     clear()
     while True:
         dotArt('txtes/pudim')
@@ -109,9 +193,10 @@ def pudim(chamadaInimigo, txt = None): #menu do inventario do pudim
                 dotArt('txtes/pudim')
                 print("Pudim - sobrenome: de Limão\
                     \n-----------------------------\
+                    \nHP: 20 - Não deixe chegar a 0\
                     \nForça: 3 - Bem forte, para um gatinho\
                     \nAtaque: 5 - Sua espada é sua maior aliada\
-                    \nAgilidade: 6 - Jovem e flexível, um felino admiravel")
+                    \nAgilidade: 6 - Jovem e flexível, um felino admirável")
                 if temAmuleto == True:
                     print("Sorte: 10 - Pudim tem certeza que é o gato mais sortudo de Miaudade")
                 else:
@@ -161,7 +246,7 @@ def pudim(chamadaInimigo, txt = None): #menu do inventario do pudim
                     continue
             case 3:
                 clear()
-                menu_luta(chamadaInimigo, txt)
+                menu_luta(inimigo, txt)
             case _:
                 input("Opção inválida. Pressione Enter para voltar... ")
                 continue
