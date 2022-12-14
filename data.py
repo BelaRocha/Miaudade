@@ -56,21 +56,26 @@ ingredientesFalta = 4 - ingredientes
 
 #lutinha piu piu piu kabum
 
-def sorteAtaque():
+def sorteAtaque(eInimigo):
     listaDano = [0, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2.5, 2.5, 2.5, 2.5, 2.5, 3, 3, 3, 3, 4]
     dadinho = (random.randint(0,19))
-    if temAmuleto == False:
-        animar('Sua sorte foi: ')
-        print(dadinho)
+    if eInimigo == True:
+        dano = listaDano[dadinho]
     else:
-        dadinho = dadinho + 2
-        animar('Sua sorte foi: ')
-        print(dadinho)
-    sleep(0.05)
-    dano = listaDano[dadinho]
-    animar('Seu dano foi: ')
-    print(dano)
+        if temAmuleto == False:
+            animar('Sua sorte foi: ')
+            print(dadinho)
+        else:
+            dadinho = dadinho + 2
+            animar('\nSua sorte foi: ')
+            print(dadinho)
+        sleep(0.05)
+        dano = listaDano[dadinho]
+        animar('\nSeu dano foi: ')
+        print(dano)
     return dano
+
+
 
 #uiui covarde fugir
 
@@ -78,28 +83,44 @@ def sortefuga():
     listafug = [False, True]
     dadinho = (random.randint(0,19))
     if temAmuleto == False:
-        animar('Sua sorte foi: ')
+        animar('\nSua sorte foi: ')
         print(dadinho)
     else:
         dadinho = dadinho + 2
-        animar('Sua sorte foi: ')
+        animar('\nSua sorte foi: ')
         print(dadinho)
     if dadinho >= 9:
         fug = listafug[1]
     else:
         fug = listafug[0]
     if fug == True:
-        animar('Sucesso!')
+        animar('\nSucesso!')
     else:
-        animar('Falha!')
+        animar('\nFalha!')
     return fug
 
 def ataquePudim():
-    
-    pass
-def ataqueInimigo(inimigo):
+    animar("\nPudim prepara sua espada para um golpe!")
+    input('\nPressione Enter para atacar!')
+    sleep(0.25)
+    dano = sorteAtaque(eInimigo = False)
+    if dano <= 0:
+        animar("Erro crítico! Pudim erra o inimigo!")
+    elif dano >= 4:
+        animar("Acerto crítico! Pudim acerta em cheio!")
+    return dano
 
-    pass
+def ataqueInimigo(inimigo):
+    animar("\nO inimigo prepara um ataque!")
+    sleep(0.5)
+    dano = sorteAtaque(eInimigo = True)
+    dano += inimigo['atk']
+    if dano <= 0:
+        animar("\nErro crítico! O inimigo errou!")
+    elif dano >= 4:
+        animar("\nAcerto crítico! O inimigo te acertou em cheio!")
+    return dano
+
 #menus-------------------------------------------------------------------------------------------------------------------------
 
 def chamarMapaInicial():
@@ -141,7 +162,6 @@ def chamarMapaInicial():
                 input()
                 clear()
                 continue
-
 
 def chamarMapa():
     while True:
@@ -195,10 +215,10 @@ def chamarMapa():
                 clear()
                 continue 
 
-def menu_luta(inimigo, txt): #menu principal quando começam encontros com inimigos
+def menu_luta(inimigo): #menu principal quando começam encontros com inimigos
     clear()
     while True:
-        dotArt(txt)
+        dotArt(inimigo['txt'])
         animar(inimigo['chamada'])
         print(f"\n----------------------------------\
         \n1 - Atacar\
@@ -207,30 +227,45 @@ def menu_luta(inimigo, txt): #menu principal quando começam encontros com inimi
         menuOpcao = valInt("Insira opção: ")
         match menuOpcao:
             case 1:
-                while inimigo['hp'] >= 0:
-                    animar("Pudim prepara sua espada para um golpe!")
-                    input('Pressione Enter para atacar!')
-                    sleep(0.25)
-                    dano = sorteAtaque()
-                    if dano <= 0:
-                        animar("Erro crítico! Pudim erra o inimigo!")
-                    elif dano >= 4:
-                        animar("Acerto crítico! Pudim acerta em cheio!")
-                    inimigo['hp'] -= dano
-                    animar(f"O HP do {inimigo['nome']} é {inimigo['hp']}!")
-                animar('Sucesso!')
-                break        
+                clear()
+                pudimHp = 10
+                inimigoHp = inimigo['hp']
+                while True:
+                    danoPudim = ataquePudim()
+                    inimigo['hp'] -= danoPudim
+                    animar(f"\nO HP do {inimigo['nome']} é: {inimigo['hp']}!")
+                    danoInimigo = ataqueInimigo(inimigo)
+                    pudimHp -= danoInimigo + 4
+                    if danoInimigo > 0:
+                        animar(f"\nOuch! o {inimigo['nome']} te deu {danoInimigo}! Seu HP é: {pudimHp}!")
+                    if pudimHp < 1:
+                        break
+                    if inimigo['hp'] < 1:
+                        break
+                if pudimHp >= 1: 
+                    animar('Sucesso!')
+                    break
+                else:
+                    morreu()
+                    break  
             case 2:
-                pudim(inimigo, txt)
-            case 3: 
-                dotArt(txt)
-                print('')
+                pudim(inimigo)
+            case 3:
+                clear()
+                dotArt(inimigo['txt'])
+                print(f"{inimigo['nome']}\
+                    \n----------------------------\
+                    \n{inimigo['descricao']}\
+                    \nHP: {inimigo['hp']}\
+                    \nAtaque: {inimigo['atk']}")
+                input()
+                continue
             case _:
                 input("Opção inválida. Pressione Enter para voltar... ")
                 continue
 
 
-def pudim(inimigo, txt = None): #menu do inventario do pudim
+def pudim(inimigo): #menu do inventario do pudim
     clear()
     while True:
         dotArt('txtes/pudim')
@@ -299,11 +334,20 @@ def pudim(inimigo, txt = None): #menu do inventario do pudim
                     continue
             case 3:
                 clear()
-                menu_luta(inimigo, txt)
+                menu_luta(inimigo)
             case _:
                 input("Opção inválida. Pressione Enter para voltar... ")
                 continue
 
+def morreu():
+    sleep(1.0)
+    clear()
+    dotArt('txtes/gatoosso')
+    animar('                       Você falhou... Miaudade cai sob o caos em sua ausência...')
+    input('\n                        Pressione Enter para voltar para o Menu Principal...')
+    sleep(0.25)
+    import menu
+                            
 class inventario:
 
     def chamarItem(item):
@@ -354,40 +398,54 @@ class inventario:
 #inimigos
 
 soldadoRato = {
+    'txt': 'txtes/soldadorato',
     'nome': 'Soldado Rato',
     'descricao': 'Um grande e forte soldado rato. Parece que não vão muito com a sua cara.',
     'chamada': 'Um Soldado Rato ergue-se na sua frente! Cuidado Pudim!',
-    'atk': 4,
-    'hp': 30
+    'atk': 0,
+    'hp': 5
 }
 ratão = {
+    'txt': 'txtes/ratão',
     'nome': 'Ratão',
     'descricao': 'Um ratazana enorme, tanto para cima quanto pros lados. Parece muito perigosa.',
     'chamada': 'O Ratão pisoteia a frente! Cuidado Pudim!',
-    'atk': 6,
-    'hp': 40
+    'atk': 0.5,
+    'hp': 6
 }
 
 ratãoFinal = {
+    'txt': 'txtes/ratão',
     'nome': 'Ratão: o Grande Rato',
     'descricao': 'O Ratão retorna. Ele parece nervoso e inspirado, sua força é maior do que antes.',
     'chamada': 'O chão treme sob as patas do Ratão! Muito cuidado Pudim!',
-    'atk': 10,
-    'hp': 80
+    'atk': 2.5,
+    'hp': 10
 }
 
 dinoPlanta = {
+    'txt': 'txtes/dinoplanta',
     'nome': 'Dinoplanta: a Planta Ancestral',
     'descricao': 'Uma planta carnívora de eras antepassadas. Nos tempos antigos, plantas dinossauro alimentavam-se de felinos.',
     'chamada': 'A Planta Ancestral estica suas vinhas! Muito cuidado Pudim!',
-    'atk': 7,
-    'hp': 50
+    'atk': 1,
+    'hp': 7
 }
 
 monstroLago = {
+    'txt': 'txtes/monstrolago',
     'nome' : 'Monstro Cristalino: o Protetor das Jóias',
     'descricao': 'Um monstro misterioso que se camufla perfeitamente nas cavernas da mina. Extremamente perigoso.',
     'chamada': 'A olhos do monstro brilham o mesmo azul que cintila dos cristais nas suas costas. Muito cuidado Pudim!',
-    'atk': 8,
-    'hp': 60
+    'atk': 1.5,
+    'hp': 8
+}
+
+italiano = {
+    'txt': 'txtes/italiano',
+    'nome' : 'Doguitaliano: O Cão Gourmet',
+    'descricao': 'Um cão italiano, excepcionalmente excêntrico. É um mestre da ávido da cúlinaria',
+    'chamada': 'O Doguitaliano late para você, e mostra suas prezas! Muito cuidado Pudim!',
+    'atk': 2,
+    'hp': 9
 }
