@@ -318,4 +318,147 @@ Lugar Misterioso
 
 Final
     Pudim avança por Miaudade, percebendo um vazio estranho pela cidade. O ar parece completamente parado enquanto o gato corre para o
-    Miauderijo. Ele se pergunta onde foram todos os Soldados Ratos que marchavam pelas ruas
+    Miauderijo, ele se pergunta onde foram todos os Soldados Ratos que marchavam pelas ruas, mas não permite que sua mente vague por
+    muito tempo. Logo a saída da cidade aparece a vista, e depois dela a o Miauderijo.
+
+    Pudim
+        *Rummmm... Esperava algo a mais, foi muito fácil!
+    Sr. Bigodes
+        *Pudim, você retornou!
+    Bola de Pelos
+        *Pudim... você recolheu todos os ingredientes?
+    Pudim
+        *Sim... aqui estão...
+    (Pudim entrega a Flor, a Pena, o Cristal e a Massa para o Mago Bola de Pelos)
+    Bola de Pelos
+        *Certo! Então, meu trabalho começa agora!
+
+    O gato Bola de Pelos se retira, adentrando uma sala escura com os ingredientes em patas. Pudim e Sr. Bigodes permanecem, ansiosos
+    e tensos.
+    Sr. Bigodes
+        *Pudim, se isso funcionar, Miaudade estará li--
+    ???
+        *Gatos imundos! Saiam daí agora!
+    Pudim
+        *O que? De quem é essa voz aguda e estridente?
+    Pudim e o velho Sr. Bigodes saem para fora do Miauderijo, e são encontrados por uma dupla aterrorizante.
+    Ratão
+        *Nos encontramos novamente, bichano!
+    Pudim
+        *Você! Já é tarde demais, ratão!
+    Sr. Bigodes
+        *Não pode ser! Reiqueijão, seu dentuço maldito!
+    ???
+        *Hihihi...
+    Reiqueijão, o Rei dos Ratos
+        *Hihihihihihihi!!! Simmm! Eu, o Reiqueijão (leia-se requeijão), vim prender vocês, meliantes!
+    Pudim
+        *...
+    Reiqueijão
+        *Hihihi...hiiii!
+    Pudim
+        *Ei ratão, você era o Reiqueijão desde o início?!
+    Ratão (não é o Reiqueijão)
+        *Não, gato burro! Você está na presença do mais ilustre Rei do reino animal, meu irmão! Tenha respeito.
+    Sr. Bigodes
+        *Sim, Pudim, esse é o Reiqueijão... o tirano que tomou nossa Miaudade!
+    Bola de Pelos
+        *Pudim? Sr. Bigodes? A receita está quase pronta! Onde vocês es--
+    Reiqueijão
+        *Bola de Pelos! Farei você voltar para sua cela!
+    Bolas de Pelos
+        *Rei! Droga, o que será de nós ag--
+    Pudim
+        *Você, colocar alguem numa cela? Acho mais facil pisarem em você, nanico! Hahahaha!
+    Reiqueijão
+        *O queeee?!!
+    Ratão
+        *Ora... agora você foi longe de mais, bichano! Olha como você fala com o meu irmãozinho!
+
+    (luta com ratão)
+
+    Ratão
+        *Argh... de novo, não! Irmão... fuja!
+    Reiqueijão
+        *Irmãozão!
+    Pudim
+        *Rum! Agora só falta você, Reiqueijão!
+    Bola de Pelos
+        *Pudim! O feitiço secreto que nos livrará dos ratos está pronto!
+    Pudim
+        *Ótimo! E você reizinho, vem comigo.
+    Pudim, levando o rei consigo, adentra o Miauderijo novamente. O gato mago Bola de Pelos deixa o trio aguardando por mais alguns
+    minutos, até que finalmente, ele retorna com uma grande tigela de madeira. O cheiro que emana dela é divino para o olfato dos gatos
+    ali presentes, porém, o efeito que parece ter no rei rato aparenta ser dez vezes maior.
+
+    Bola de Pelos
+        *Aqui está... o Queijo Irresistível! Quando ele for colocado em ação, nenhum rato conseguirá se segurar.
+    Pudim
+        *É claro... rum... não seria de outro jeito.
+        Mas, antes disso... O que fazer com você, Reiqueijão!
+    O rato parece ser retirado de um transe ao ouvir seu nome
+    Reiqueijão
+        *O-O que?! 
+    Sr. Bigodes
+        *O que você sugere, Pudim?
+    Pudim
+        *Rum...
+    
+    (1 - Prende-lo na Torre            2 - Leva-lo para longe junto dos outros ratos)
+
+    case 1:
+        Pudim
+            *... sua crueldade com o Bolinha não vai passar despercebida, Reiqueijão! Os outros ratos vão para longe daqui, mas você...
+            você vai ficar!
+        Reiqueijão
+            *O que-o que quer dizer?!
+        Pudim
+            *Para a masmorra da Torre! Você ficara preso em Miaudade, até que se arrependa completamente dos seus atos... nem que isso
+            dure para sempre!
+        Bola de Pelos
+            *Então... preparados?...
+        Os gatos saem mais uma vez, e sob o céu escarlate do por do sol, o gato mago traz o Queijo Irresistível, e o levanta para o topo de seu 
+        cajado, o qual ele ergue e aponta ao céu.
+        Bola de Pelos
+            *Que esse Queijo irresistível e delicioso, voe ao mais distante horizonte, e leve os ratos para longe de Miaudade!
+        Ao fim das suas palavras encantadas, o Queijo decola, voando alto e rapidamente pelo céu, até sumir de vista. Pouco se passa, e inúmeros ratos,
+        todos ocupantes de Miaudade, correm na direção em que o laticinio partiu. A multidão logo sai de vista, e o gosto do sucesso chega à lingua
+        de Pudim. Miaudade está livre novamente.
+        Pudim
+            *E você, Reiqueijão... para a masmorra!
+        Pudim carrega o pequeno ratinho pelas ruas de Miaudade, enquanto ele grita e pede clemência. Os dois chegam até a Torre, o felino puxando o 
+        roedor escada abaixo, até a cela onde o Gato Mago Bola de Pelos esteve preso.
+        Pudim  
+            *Esse é o seu novo lar... Rei do queijão...
+
+        Fim
+
+        Você salvou Miaudade e retornou aos gatos o seu lar, parabéns!
+
+        Obrigado por jogar nosso jogo!
+
+
+    case 2:
+        Pudim
+            *Seus atos em Miaudade são imperdoáveis, Reiqueijão... mas, terei piedade de você! Você sairá da nossa cidade, junto dos seus
+            outros ratos!
+        Sr. Bigodes
+            *Pudim... que mais nobre ação! Fico feliz... em ver o gato que você se tornou!
+        Bola de Pelos
+            *Então... preparados?...
+        Os gatos saem mais uma vez, e sob o céu escarlate do por do sol, o gato mago traz o Queijo Irresistível, e o levanta para o topo de seu 
+        cajado, o qual ele ergue e aponta ao céu.
+        Bola de Pelos
+            *Que esse Queijo irresistível e delicioso, voe ao mais distante horizonte, e leve os ratos para longe de Miaudade!
+        Ao fim das suas palavras encantadas, o Queijo decola, voando alto e rapidamente pelo céu, até sumir de vista. Pouco se passa, e inúmeros ratos,
+        todos ocupantes de Miaudade, correm na direção em que o laticinio partiu. A multidão logo sai de vista, e o gosto do sucesso chega à lingua
+        de Pudim. Miaudade está livre novamente.
+        Pudim
+            *E você, Reiqueijão... vá, e não volte nunca mais!
+        Pudim solta dos bracinhos frágeis do rato, que sai correndo na direção de seus compatriotas, sem olhar para trás.
+
+        Fim
+
+        Você salvou Miaudade e retornou aos gatos o seu lar, parabéns!
+
+        Obrigado por jogar nosso jogo!
