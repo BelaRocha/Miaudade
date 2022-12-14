@@ -31,5 +31,4 @@ data.falas('txtes/gatovelho', 'Sr. bigodes', 'Use isso, e salve o Grande Gato Ma
 data.falas('txtes/pudim', 'Pudim', 'Então... tenho que resgatá-lo! Sei que o prenderam nas masmorras da Grande Torre!\nObrigado vovô, tenho minha missão! Me deseje sorte...')
 data.animar('O corajoso Pudim salta para fora, iniciando sua aventura.')
 
-data.animar("(Pressione 'm' para abrir o mapa)")
 data.chamarMapaInicial()
