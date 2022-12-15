@@ -1,11 +1,12 @@
 #importaçaoes importadas 
-from os import system
+import os
 from time import sleep
 import sys
 import random
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..'))
 
 #utilidades-------------------------------------------------------------------------------------------------------------------------
-def clear(): system('cls') #função que limpa a tela do terminal
+def clear(): os.system('cls') #função que limpa a tela do terminal
 
 def valInt(texto): #valInt: função que valida um input int (para menus e opçoes e etc) (use como se fosse um input normal)
     while True:
