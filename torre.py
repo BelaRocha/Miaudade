@@ -166,3 +166,6 @@ match escolha:
         input()
         data.clear()
         data.animar('Fim.')
+        
+data.clear()
+data.chamarMapa()
