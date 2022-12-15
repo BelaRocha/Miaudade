@@ -39,17 +39,22 @@ if data.temFlor == False:
         \nEle parece distraido cortando lenha, o que fazer?')
     data.animar('\n\n1-Atacar           2-Passar despercebido')
     escolha = data.valInt('\n             ')
-    data.animar("Você pula no inimigo, o atacando de surpresa!") 
-    data.menu_luta
-    data.animar('...O rato cai derrotado, Pudim segue em frente novamente!') #sucesso
-    input()
-    data.clear()
-    data.animar('Você tenta se camuflar nas árvores e passar despercebido...')
-    data.animar('...Mas Pudim é branco! O rato percebe sua presença e te ataca!') 
-    data.menu_luta
-    data.animar('...E mesmo Pudim sendo branco, o rato é dautônico! Pudim passa de fininho e avança!') #sucesso
-    input()
-    data.clear()
+    match escolha:
+        case 1:
+            data.animar("Você pula no inimigo, o atacando de surpresa!") 
+            data.luta(data.soldadoRato)
+            data.animar('...O rato cai derrotado, Pudim segue em frente novamente!') #sucesso
+            input()
+            data.clear()
+        case 2:
+            data.animar('Você tenta se camuflar nas árvores e passar despercebido...')
+            if data.sortefuga() == True:
+                data.animar('...E mesmo Pudim sendo branco, o rato é dautônico! Pudim passa de fininho e avança!') #sucesso
+                input()
+                data.clear()
+            else:
+                data.animar('...Mas Pudim é branco! O rato percebe sua presença e te ataca!') 
+                data.luta(data.soldadoRato)
 
     data.animar('Pudim anda por o que parecem horas para suas perninhas curtas de gatinho, até que, num caminho ingrime e escuro, ele vê,\
         \niluminada por um unico feiche de luz que corta pela copa das árvores, a Flor Ancestral! Pudim pula em sua direção, porém!')
