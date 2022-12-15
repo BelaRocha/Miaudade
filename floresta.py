@@ -15,18 +15,25 @@ if data.temPena == False:
     data.animar('')
     data.animar('\n\n1-Atacar           2-Passar despercebido')
     escolha = data.valInt('\n             ')
-    data.animar('Você pula no pombo e arranca uma pena.')
-    input()
-    data.clear()
-    data.falas('txtes/pombo', 'Pombo', 'Ei, o que pensa que tá fazendo? Prometo que vou te processar, seu gato imundo!')
-    data.animar('O Pombo parece bravo. Ele sai voando para longe.')
-    input()
-    data.clear()
-    data.falas('txtes/pena', 'Pudim conseguiu a Pena Suja!', '')
-    data.temPena == True
-    data.animar('Você não faz nada. Parece uma oportunidade desperdiçada.')
-    input()
-    data.clear()
+    match escolha:
+        case 1:
+            data.animar('Você pula no pombo e arranca uma pena.')
+            input()
+            data.clear()
+            data.falas('txtes/pombo', 'Pombo', 'Ei, o que pensa que tá fazendo? Prometo que vou te processar, seu gato imundo!')
+            data.animar('O Pombo parece bravo. Ele sai voando para longe.')
+            input()
+            data.clear()
+            data.falas('txtes/pena', '(Pudim pegou a Pena Suja!)', '')
+            data.temPena == True
+            if data.ingredientesFalta == 0:
+                data.falas('txtes/pudim', 'Pudim', 'Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!')
+            else:
+                data.falas('txtes/pudim', 'Pudim', f'Tudo bem, Só mais {data.ingredientesFalta} pra pegar! Miau!')
+        case 2:
+            data.animar('Você não faz nada. Parece uma oportunidade desperdiçada.')
+            input()
+            data.clear()
 if data.temFlor == False:
     data.animar('Pudim continua o seu caminho pela floresta, passando entre as arvores enquanto procura a flor até que encontra um Soldado Rato no caminho!\
         \nEle parece distraido cortando lenha, o que fazer?')
@@ -58,5 +65,3 @@ if data.temFlor == False:
         data.falas('txtes/pudim', 'Pudim', f'Tudo bem, Só mais {data.ingredientesFalta} pra pegar! Miau!')
 else:
     data.falas('Rum... o que tô fazendo aqui? Não tenho tempo pra perder!')
-data.clear()
-data.chamarMapa()
