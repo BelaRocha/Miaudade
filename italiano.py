@@ -13,11 +13,7 @@ data.animar('Pudim faz seu caminho até a casa misteriosa ao lado da Torre, num 
     \ncomeça a procurar a Massa Sagrada.')
 input()
 data.clear()
-data.animar('Ei, quem tá aí? Woof!')
-input()
-data.clear()
-data.animar('Uma voz latida corre de uma porta (há uma placa nela, escrito "Quarto")! Pudim corre para se esconder, se jogando atrás de um sofá\
-    \n(com estampa de macarronada) e observando a figura que surge.')
+data.animar('\n???\nEi, quem tá aí? Woof!')
 input()
 data.clear()
 data.animar('Uma voz latida corre de uma porta (há uma placa nela, escrito "Quarto")! Pudim corre para se esconder, se jogando atrás de um sofá\
@@ -25,25 +21,22 @@ data.animar('Uma voz latida corre de uma porta (há uma placa nela, escrito "Qua
 input()
 data.clear()
 data.falas('txtes/italiano', 'Doguitaliano', 'Quem tá aqui? Mi Familia não gosta de intrusos!\
-    \nWoof... tentando se esconder? Saiba que nós cães italianos temos o mais apurado elfato do reino animal!')
+    \nWoof... tentando se esconder? Saiba que nós cães italianos temos o mais apurado olfato do reino animal!')
 data.animar("O Doguitaliano se prepara para farejar o intruso (você), o que fazer")
 data.animar('\n\n1-Atacar           2-Passar despercebido')
 escolha = data.valInt('\n             ')
-fight = False
-
-match escolha: 
-    case 2:
-        data.animar('Pudim tenta passar de fininho pelo cão...')
-        if data.sorteFuga == True:
-            data.animar('...mas o cheiro delicioso de algo no forno atrapalha o fucinho do cão! Você foge para o "Quarto"!')
-        else:
-            data.animar('...mas Pudim cheira a pudim! é forte demais para passar pelo fucinho apurado do Doguitaliano!')
-            fight = True
-        
+match escolha:
     case 1:
         data.animar('Pudim avança contra o cão excêntrico, pulando para cima dele antes que farejasse sua posição! Ataque surpresa!')
         data.clear()
         fight = True
+    case 2:
+        data.animar('Pudim tenta passar de fininho pelo cão...')
+        if data.sortefuga() == True:
+            data.animar('\n...mas o cheiro delicioso de algo no forno atrapalha o fucinho do cão! Você foge para o "Quarto"!')
+        else:
+            data.animar('\n...mas Pudim cheira a pudim! é forte demais para passar pelo fucinho apurado do Doguitaliano!')
+            fight = True
 
 if fight == True:
     data.falas('txtes/italiano', 'Doguitaliano','Oh, mamma mia, se não é um gato nojento! Veio virar parte da minha receita suprema, felino? Woof Woof!')
@@ -54,7 +47,7 @@ if fight == True:
                 \nmudará o mundo, e usará da grande Massa Sagrada como fundamento.')
     data.falas('txtes/pudim', 'Pudim', 'Miau! Nesse caso, passe pra cá!')
     data.falas('txtes/italiano', 'Doguitaliano', 'Woof Woof! Não vai ser tão fácil assim, Pudim!')
-    #luta doguitaliano
+    data.luta(data.italiano)
     data.falas('txtes/italiano', 'Doguitaliano', 'Arf... Arf... Droga! Diga, felino, você vai mesmo roubar a Massa Sagrada?')
     data.falas('txtes/pudim', 'Pudim', 'Sim! Pelo bem de Miaudade, preciso dela para levar os ratos para longe!')
     data.falas('txtes/italiano', 'Doguitaliano', 'Arf... nesse caso... me prometa, Pudim, que ira fazer uma receita que faz juz à culinária italiana!')
@@ -69,11 +62,9 @@ data.animar('Pudim adentra o "Quarto", e logo percebe que é uma cozinha, com um
 input()
 data.clear()
 data.animar('Ele controla a vontade de experimentar e guarda a massa.')
-data.falas('txtes/macarrao', '(Pudim conseguiu a Massa Sagrada!)', '')
+data.falas('txtes/macarrao', '(Pudim pegou a Massa Sagrada!)', '')
 data.temMassa = True
 if data.ingredientesFalta == 0:
     data.falas('txtes/pudim', 'Pudim', 'Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!')
 else:
     data.falas('txtes/pudim', 'Pudim', f'Tudo bem, Só mais {data.ingredientesFalta} pra pegar! Miau!')
-data.clear()
-data.chamarMapa()
