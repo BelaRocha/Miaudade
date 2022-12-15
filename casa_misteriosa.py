@@ -35,3 +35,5 @@ match escolha:
     case 2:
         data.animar(' Você dá meia volta e vai embora, com o rabinho entre as pernas.')
 #abre mapa
+data.clear()
+data.chamarMapa()
