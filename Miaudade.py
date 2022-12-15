@@ -2,7 +2,7 @@
 
 from time import sleep
 import sys
-import data
+from jogo import data
 
 data.clear()
 
@@ -26,7 +26,7 @@ while True:
             frase = '   Os gatos viviam felizes há muito tempo em Miaudade, onde tinham comida e camas quentinhas para dormirem o dia todo. Um dia, os soldados do Rato Reiqueijão \ninvadiram e ocuparama cidade, expulsando todos os gatos. O Rei Rato sabia que o único felino que poderia tira-lo do poder era o Mago Bola de Pelos e então, por medo, ele o aprisionou em uma torre perto da Floresta Macabra. Os gatos felizmente conseguiram  construir um esconderijo não muito longe da cidade, onde também tinham camas quentinhas, por isso muitos gatos perderam a vontade de lutar e decidiram continuar se escondendo...'
             animar()
             data.clear()
-            import inicio
+            from jogo import inicio
         case 2:
             frase = 'Feito por Izabela e Álvaro'
             animar()
