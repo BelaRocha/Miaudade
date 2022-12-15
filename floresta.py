@@ -53,7 +53,7 @@ if data.temFlor == False:
 
     data.animar('Pudim anda por o que parecem horas para suas perninhas curtas de gatinho, até que, num caminho ingrime e escuro, ele vê,\
         \niluminada por um unico feiche de luz que corta pela copa das árvores, a Flor Ancestral! Pudim pula em sua direção, porém!')
-        #luta com dinoplanta
+    data.luta(data.dinoPlanta)
     data.animar('A Dinoplanta mítica de lenda cai derrotada de volta ao chão! Você segura a Flor Ancestral em suas patas')
     input()
     data.clear()
