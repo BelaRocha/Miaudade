@@ -58,3 +58,5 @@ if data.temFlor == False:
         data.falas('txtes/pudim', 'Pudim', f'Tudo bem, Só mais {data.ingredientesFalta} pra pegar! Miau!')
 else:
     data.falas('Rum... o que tô fazendo aqui? Não tenho tempo pra perder!')
+data.clear()
+data.chamarMapa()
