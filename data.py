@@ -40,18 +40,30 @@ def falas(txt, nome, fala):
 #check dos itens---------------------------------------------------------------------------------------------------------------
 temChave = False
 temAmuleto = False
+global temFlor 
 temFlor = False
+global temPena
 temPena = False
+global temCristal
 temCristal = False
+global temMassa
 temMassa = False
-ingredientes = 0
-ultimoIngrediente = False
 
-if temFlor == True or temPena == True or temCristal == True or temMassa == True:
-    ingredientes += 1
+ingredientesLista = [temFlor, temPena, temCristal, temMassa]
 
-ingredientesFalta = 4 - ingredientes
 
+def ingredientesFalta():
+    ingredientes = 0
+    if temFlor:
+        ingredientes += 1
+    if temPena:
+        ingredientes += 1
+    if temCristal:
+        ingredientes += 1
+    if temMassa:
+        ingredientes += 1
+    ingFalta = 4 - ingredientes
+    return ingFalta
 #sistemas-------------------------------------------------------------------------------------------------------------------------
 
 #lutinha piu piu piu kabum
@@ -231,7 +243,7 @@ def luta(inimigo): #menu principal quando começam encontros com inimigos
                 pudimHp = 10
                 while True:
                     danoPudim = ataquePudim()
-                    inimigo['hp'] -= danoPudim
+                    inimigo['hp'] -= danoPudim + 7
                     animar(f"\nO HP do {inimigo['nome']} é: {inimigo['hp']}!")
                     if inimigo['hp'] < 1:
                         break
@@ -401,7 +413,7 @@ soldadoRato = {
     'nome': 'Soldado Rato',
     'descricao': 'Um grande e forte soldado rato. Parece que não vão muito com a sua cara.',
     'chamada': 'Um Soldado Rato ergue-se na sua frente! Cuidado Pudim!',
-    'atk': 0.5,
+    'atk': 0,
     'hp': 5
 }
 ratão = {
@@ -409,7 +421,7 @@ ratão = {
     'nome': 'Ratão',
     'descricao': 'Um ratazana enorme, tanto para cima quanto pros lados. Parece muito perigosa.',
     'chamada': 'O Ratão pisoteia a frente! Cuidado Pudim!',
-    'atk': 1.0,
+    'atk': 0.5,
     'hp': 6
 }
 
