@@ -243,7 +243,7 @@ def luta(inimigo): #menu principal quando começam encontros com inimigos
                 pudimHp = 10
                 while True:
                     danoPudim = ataquePudim()
-                    inimigo['hp'] -= danoPudim + 7
+                    inimigo['hp'] -= danoPudim
                     animar(f"\nO HP do {inimigo['nome']} é: {inimigo['hp']}!")
                     if inimigo['hp'] < 1:
                         break
