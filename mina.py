@@ -75,3 +75,5 @@ if data.ingredientesFalta == 0:
     data.falas('txtes/pudim', 'Pudim', 'Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!')
 else:
     data.falas('txtes/pudim', 'Pudim', f'Tudo bem, Só mais {data.ingredientesFalta} pra pegar! Miau!')
+data.clear()
+data.chamarMapa()
