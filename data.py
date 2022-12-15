@@ -63,7 +63,7 @@ def sorteAtaque(eInimigo):
         dano = listaDano[dadinho]
     else:
         if temAmuleto == False:
-            animar('Sua sorte foi: ')
+            animar('\nSua sorte foi: ')
             print(dadinho)
         else:
             dadinho = dadinho + 2
@@ -105,9 +105,9 @@ def ataquePudim():
     sleep(0.25)
     dano = sorteAtaque(eInimigo = False)
     if dano <= 0:
-        animar("Erro crítico! Pudim erra o inimigo!")
+        animar("\nErro crítico! Pudim erra o inimigo!")
     elif dano >= 4:
-        animar("Acerto crítico! Pudim acerta em cheio!")
+        animar("\nAcerto crítico! Pudim acerta em cheio!")
     return dano
 
 def ataqueInimigo(inimigo):
@@ -215,7 +215,7 @@ def chamarMapa():
                 clear()
                 continue 
 
-def menu_luta(inimigo): #menu principal quando começam encontros com inimigos
+def luta(inimigo): #menu principal quando começam encontros com inimigos
     clear()
     while True:
         dotArt(inimigo['txt'])
@@ -229,21 +229,20 @@ def menu_luta(inimigo): #menu principal quando começam encontros com inimigos
             case 1:
                 clear()
                 pudimHp = 10
-                inimigoHp = inimigo['hp']
                 while True:
                     danoPudim = ataquePudim()
-                    inimigo['hp'] -= danoPudim
+                    inimigo['hp'] -= danoPudim + 7
                     animar(f"\nO HP do {inimigo['nome']} é: {inimigo['hp']}!")
+                    if inimigo['hp'] < 1:
+                        break
                     danoInimigo = ataqueInimigo(inimigo)
-                    pudimHp -= danoInimigo + 4
+                    pudimHp -= danoInimigo
                     if danoInimigo > 0:
                         animar(f"\nOuch! o {inimigo['nome']} te deu {danoInimigo}! Seu HP é: {pudimHp}!")
                     if pudimHp < 1:
                         break
-                    if inimigo['hp'] < 1:
-                        break
                 if pudimHp >= 1: 
-                    animar('Sucesso!')
+                    animar('\nSucesso!')
                     break
                 else:
                     morreu()
@@ -334,7 +333,7 @@ def pudim(inimigo): #menu do inventario do pudim
                     continue
             case 3:
                 clear()
-                menu_luta(inimigo)
+                luta(inimigo)
             case _:
                 input("Opção inválida. Pressione Enter para voltar... ")
                 continue
