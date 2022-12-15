@@ -39,5 +39,6 @@ data.animar('Pudim salta para fora do Miauderijo, voltando à sua aventura.')
 input()
 data.clear()
 #(abre o mapa, agora com todas as áreas liberadas)
-
+data.clear()
+data.chamarMapa()
 
