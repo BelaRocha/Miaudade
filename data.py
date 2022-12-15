@@ -231,7 +231,7 @@ def luta(inimigo): #menu principal quando começam encontros com inimigos
                 pudimHp = 10
                 while True:
                     danoPudim = ataquePudim()
-                    inimigo['hp'] -= danoPudim + 7
+                    inimigo['hp'] -= danoPudim
                     animar(f"\nO HP do {inimigo['nome']} é: {inimigo['hp']}!")
                     if inimigo['hp'] < 1:
                         break
@@ -401,7 +401,7 @@ soldadoRato = {
     'nome': 'Soldado Rato',
     'descricao': 'Um grande e forte soldado rato. Parece que não vão muito com a sua cara.',
     'chamada': 'Um Soldado Rato ergue-se na sua frente! Cuidado Pudim!',
-    'atk': 0,
+    'atk': 0.5,
     'hp': 5
 }
 ratão = {
@@ -409,7 +409,7 @@ ratão = {
     'nome': 'Ratão',
     'descricao': 'Um ratazana enorme, tanto para cima quanto pros lados. Parece muito perigosa.',
     'chamada': 'O Ratão pisoteia a frente! Cuidado Pudim!',
-    'atk': 0.5,
+    'atk': 1.0,
     'hp': 6
 }
 
