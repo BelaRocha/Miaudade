@@ -50,6 +50,8 @@ temCristal = False
 global temMassa
 temMassa = False
 
+fugiuCasa = False
+
 ingredientesLista = [temFlor, temPena, temCristal, temMassa]
 
 
@@ -200,6 +202,8 @@ def chamarMapa():
                     import floresta
                 else:
                     animar('Não há mais o que fazer aqui! ')
+                    input()
+                    clear()
                     continue
             case 3:
                 if temCristal == False:
@@ -207,6 +211,8 @@ def chamarMapa():
                     import mina
                 else:
                     animar('Não há mais o que fazer aqui! ')
+                    input()
+                    clear()
                     continue
             case 4:
                 if temMassa ==  False:
@@ -214,13 +220,22 @@ def chamarMapa():
                     import italiano
                 else:
                     animar('Não há mais o que fazer aqui! ')
+                    input()
+                    clear()
                     continue
             case 5:
-                if temAmuleto ==  False:
+                if temAmuleto or fugiuCasa == False:
                     clear()
                     import casa_misteriosa
+                elif fugiuCasa == True:
+                    animar('Nunca que volto naquele lugar!')
+                    input()
+                    clear()
+                    continue
                 else:
                     animar('Não há mais o que fazer aqui! ')
+                    input()
+                    clear()
                     continue
             case _:
                 animar('Opção inválida')

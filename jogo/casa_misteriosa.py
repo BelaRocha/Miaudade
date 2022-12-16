@@ -33,8 +33,10 @@ match escolha:
                 data.temAmuleto = True
             case 2:
                 data.animar('O bom senso de Pudim parece falar mais alto, e ele corre para fora da casa sem olhar para trás. Ele nunca saberá o que era aquilo.')
+                data.fugiuCasa = True
     case 2:
         data.animar('Você dá meia volta e vai embora, com o rabinho entre as pernas.')
+        data.fugiuCasa = True
 #abre mapa
 data.clear()
 data.chamarMapa()
