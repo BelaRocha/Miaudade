@@ -1,0 +1,473 @@
+Introdução
+    Os gatos viviam felizes há muito tempo em Miaudade, onde 
+    tinham comida e camas quentinhas para dormirem o dia todo.
+    Um dia, os soldados do Rato Reiqueijão invadiram e ocuparam
+    a cidade, expulsando todos os gatos. O Rei Rato sabia que 
+    o único felino que poderia tira-lo do poder era o Mago Bola
+    de Pelos, e então, por medo ele o aprisionou em uma torre
+    perto da Floresta Macabra. Os gatos felizmente conseguiram 
+    construir um esconderijo não muito longe da cidade, onde
+    também haviam camas quentinhas, por isso muitos gatos perderam
+    a vontade de lutar e decidiram continuar se escondendo...
+
+Começo
+    Inúmeros gatinhos dormem silenciosamente (e preguiçosamente) no Miauderijo...
+    Enquanto isso, um felino solitario se levanta.
+    .
+    .
+    .
+    Pudim
+        *Rum... não vou ficar parado aqui... Miau!
+    Pudim pula por cima dos outros gatos e corre até a saida do seu abrigo.
+
+    Gato Sábio Sr. Bigodes
+        *Espere, Pudim! 
+    Pudim
+        *Vô Bigodes! Não tente me deter vovô... alguém precisa fazer algo!
+    Gato Sábio Sr. Bigodes
+        *Eu sei Pudim... e precisamos que seja você!
+    Pudim
+        *O que?--
+    Sr. Bigodes
+        *Os outros gatinhos são preguiçosos demais! 
+        *Você acabou de completar 1 ano, (15 Anos em idade felina), e ainda
+        está cheio de energia. Só você pode nos salvar, Pudim...
+    Pudim
+        *Hmm... bem, nesse caso, já tô de partida-
+    Sr. Bigodes
+        *Espere, Pudim!
+        .
+        .
+        .
+        *É perigoso demais ir desequipado... Tome isso.
+    (Pudim recebeu a Espada Velha)
+        *Use isso, e salve o Grande Gato Mago, o ilustre Bola de Pelos!
+        Ele é a nossa esperança, o único poderoso o suficiente para se livrar
+        dos ratos!
+    Pudim
+        *Então... tenho que resgatá-lo! Sei que o prenderam nas masmorras da Grande Torre!
+        *Obrigado vovô, tenho minha missão! Me deseje sorte...
+    O corajoso Pudim salta para fora, iniciando sua aventura.
+
+    (Mapa aparece, apenas a torre pode ser escolhida)
+
+Torre
+    Pudim põe suas patas para bom uso, correndo até Miaudade. Dentro da cidade, ele se depara
+    com varios Soldados Ratos, os lacaios do Reiqueijão. O que fazer?
+
+    (1-Atacar\2-Passar despercebido)
+    1-Você encara de frente os inimigos com sua espada em mãos... (luta)
+        O Pudim segue em frente, deixando os inimigos derrotados para trás! (sucesso)
+    2-Você tenta passar de fininho pelos ratos, dando passos leves...
+        ...Mas se distrai com uma borboleta! Tentativa falha! (luta)
+        ...e os deixa pra trás, sem nem saberem que esteve ali! (sucesso)
+    Pudim
+        *Moleza!
+    
+    O resto do caminho até a Torre é livre. Pudim abre suas grandes portas (com dificuldade, por não ter dedos)
+    e começa a procurar a entrada para a masmorra. Há dois caminhos na sua frente...
+    (1-Esquerda\2-Direita)
+
+    1-Pudim segue um longo corredor, se distraindo momentaneamente quando vê um mosquito. 
+    Ele encontra um grande rato, dormindo, porém ao seu lado tem um objeto dourado brilhante. Pudim quer o objeto brilhante.
+    O que fazer?
+        (1-Atacar\2-Tentar pegar despercebido)
+        1-Você ataca o inimigo enquanto ele dorme. Golpe Baixo! (luta)
+            O inimigo dorme de novo (por outro motivo dessa vez). Você se sente um pouco culpado.
+        2-Você dá pulinhos e anda de fininho, até o rato...
+            ...mas tropeça no próprio rabo! Tentativa falha, o rato acordou! (luta)
+            ...e fácilmente pega o objeto do seu lado, afinal, ele estava dormindo!
+        Com ele em mãos, você percebe que o objeto brilhante é na verdade uma chave. Ele não parece brilhar tanto assim mais
+        (Pudim encontrou a Chave)
+        Você retorna pelo corredor, até a sala que estava antes. O que fazer? (2-Direita)
+    2-Pudim segue abaixo por uma escada, alguns lances depois ele se surpreende ao dar de cara com um enorme rato, que o vê
+    antes que Pudim pudesse reagir.
+    Ratão
+        *O que é isso, um gato? Achei que vocês tinham levado seus rabos entre as pernas pra aquele muquifo!
+    Pudim
+        *Não fale mal do Miauderijo! Agora, me diga logo onde esta o Bola de Pelos!
+    Ratão
+        *Escuta aqui, eu sou o guarda da masmorra! 
+        Não vou deixar você soltar o Bola de Pelos que está depois dessa porta atrás de mim!
+    Pudim
+        *Haha! Você acabou de me contar onde ele está, seu dentuço sujismundo!
+    Ratão
+        *O que? Droga!!... quer dizer... Foi de proposito!
+        Te falei, porque sei que você não vai passar de mim, bichano! Devia ter ficado no muquifo!
+    Pudim
+        *Rum... Já disse pra não falar mal do Miauderijo!
+        (luta)
+    O Ratão cai desacordado, abrindo espaço para a porta atrás dele.
+    if pudim não tem chave:
+        Mas a porta está trancada! Hum, onde será que está a chave?
+        Você retorna, subindo a escada para a sala que estava antes.
+    pudim tem chave:
+        Você usa a Chave!
+        Pudim desce o resto das escadas até que, no final, encontra uma única cela. 
+        A Chave parece caber nessa fechadura também...
+        Abrir?...
+    if abriu:
+        Pudim
+            *Vim resgatar você, Bola de Pelos, Miau!
+        Um gato velinho, segurando um grande cajado, surje das sombras da cela.
+        Gato Mago Bola de Pelos
+            *Veja só, se não é Pudim...
+        Pudim
+            *...
+        Gato Mago Bola de Pelos
+            *...
+        Pudim
+            *...
+        Gato Mago Bola de Pelos
+            *Então... por que interrompeu minha soneca, Pudim?
+        Pudim
+            *Eu vim te resgatar, velho caduco!... quer dizer, Mago Bola de Pelos!
+            *Os ratos tomaram conta da nossa cidade, e os gatos de Miaudade foram exilados
+            pro Miauderijo! Precisamos da sua ajuda.
+        Gato Mago Bola de Pelos
+            *Hmm... a situação aparenta mais critica do que imaginei...
+            *Pudim, poderia me levar ao Miauderijo?
+    if não abriu:
+        Pudim repensa a jornada em sua frente. O chamado a ação, os desafios que o encontrariam se continuasse a seguir aquele caminho.
+        "Por que eu?" ele pensa, indignado. Ele joga a chave no chão, e retorna pelo mesmo caminho que veio, sem olhar para trás. Pudim
+        foge de Miaudade, não passando no Miauderijo para se despedir de seu avô ou de nenhum dos outros gatos. 
+        
+        A grandiosa hístoria de Pudim, e o ato valente que ele fez que com certeza teria mudado o rumo dos gatos de todo o mundo, nunca
+        se realizou para que um dia fosse contada. Nunca mais ouviram falar do Pudim novamente.
+
+        Fim 
+    
+Ingredientes
+    Pudim leva o velho Bola de Pelos até o Miauderijo, onde a dupla se reune com o Sabio Sr. Bigodes
+    Gato Sábio Sr. Bigodes
+        *É muito bom vê-lo saudável, ó grande mago!
+    Gato Mago Bola de Pelos
+        *Por favor, podem me chamar de Bola de Pelos...
+        *...ou Bolinha...
+    Pudim
+        *Tudo bem Bolinha, diz pra nós, como se livrar daqueles ratos!
+    Sr. Bigodes
+        *Ei, não chame o grande mago de Bolinha!
+    Bola de Pelos (Bolinha)
+        *Eu tenho um plano, Pudim e Sr. Bigodes! Um feitiço que os levará para longe!
+    Pudim
+        *Ótimo Bolinha, Então faça logo sua magia!
+    Bola de Pelos
+        *Tudo em seu tempo, Pudim... o feitiço é grande e poderoso, por isso... vou precisar de ingredientes especiais!
+    Pudim
+        *Rum... lá vem.
+    Bola de Pelos
+        *Pudim, preciso que você recolha para mim os ingredientes mais poderosos dessa cidade!
+        *A Flor Ancestral na Floresta Macabra
+        *O Cristal Reluzente, da Mina Decadente
+        *Uma Pena de uma grande ave.
+        *E por último, a Massa Sagrada...
+    Pudim
+        *...
+    Bola de Pelos
+        *...
+    Pudim
+        *Ei! E essa tal de massa, você não falou onde que eu encontro essa aí!
+    Bola de Pelos
+        *Sinto que não terei a resposta para essa pergunta... mas talvez, o Grande Gato Sábio a tenha?
+    Sr. Bigodes
+        *Hummm... parece que com a vinda dos ratos, uma figura... estrangeira... construiu uma casa misteriosa perto da Torre
+        *Um italiano... Pudim, talvez ele possua a massa que procura, mas sinto que não será amigável com nós felinos.
+    Pudim
+        *Miau! Tenho minha missão! Obrigado vovô e Bolinha! 
+    Pudim salta para fora do Miauderijo, voltando à sua aventura.
+
+    (abre o mapa, agora com todas as áreas liberadas)
+
+Floresta Macabra
+    Pudim adentra a floresta, uma densa vegetação ao seu redor. 
+    Ele sente uma vontade repentina de subir uma árvore, mas se controla. É quando ele nota, parado num galho, um pombo distraído!
+    Dar o bote?
+    (1-sim\2-não)
+    1 - Você pula no pombo e arranca uma pena.
+    Pombo
+        *Ei, o que pensa que tá fazendo? Prometo que vou te processar, seu gato imundo!
+    O Pombo parece bravo. Ele sai voando para longe.
+    2 - Você não faz nada. Parece uma oportunidade desperdiçada.
+
+    Pudim continua o seu caminho pela floresta, passando entre as arvores enquanto procura a flor até que encontra um Soldado Rato no caminho!
+    Ele parece distraido cortando lenha, o que fazer?
+    (1-ataque\2-passar despercebido)
+    1 - Você pula no inimigo, o atacando de surpresa! (luta)
+        ...O rato cai derrotado, Pudim segue em frente novamente! (sucesso)
+    2 - Você tenta se camuflar nas árvores e passar despercebido...
+        ...Mas Pudim é branco! O rato percebe sua presença e te ataca! (luta)
+        ...E mesmo Pudim sendo branco, o rato é dautônico! Pudim passa de fininho e avança!
+    
+    Pudim anda por o que parecem horas para suas perninhas curtas de gatinho, até que, num caminho ingrime e escuro, ele vê,
+    iluminada por um unico feiche de luz que corta pela copa das árvores, a Flor Ancestral! Pudim pula em sua direção, porém!
+    (DinoPlanta)
+    A lendária Dinoplanta se ergue do chão! (luta)
+    A Dinoplanta mítica de lenda cai derrotada de volta ao chão! Você segura a lor Ancestral em suas patas
+    (Pudim pegou a Flor Ancestral!)
+    Pudim
+        *Tudo bem! Só mais {numero de ingredientes faltando} pra pegar! Miau!
+        (se for o ultimo ingrediente):
+        *Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!
+
+Mina Decadente
+    Pudim corre até a Mina nos arredores de Miaudade. 
+    As lendas sobre os perigos da Mina, há muito tempo abandonada pelos gatos, arrepiam os pelos do felino, enquanto ele adentra a mina.
+    Não há sequer uma luz fraca em vista. As paredes da caverna ecoam com os passos leves das patas do Pudim. 
+    o gato segue bravamente pela mina sombria, seus olhos felinos escaneando minuciosamente através da escuridão porém, nenhum 
+    objeto reluzente é encontrado aqui, somente varias e varias placas espalhadas pelos cantos, todas escrito "PERIGO!".
+    
+    Pudim as ignora e segue em frente, determinado a encontrar o Cristal. Seu caminho é livre, apenas pequenos insetos e animais rastejantes
+    aparecendo no caminho, que se amedrontam ao ver o gato e fogem. De repente, ao tomar uma esquina dentro do labirinto de cavernas da mina
+    ele finalmente avista uma formação de cristais, ilhados no centro de um pequeno lago num grande espaço.
+
+    Pudim
+        *Rum... água... por você, Miaudade!
+
+    Pudim dá o maior salto de sua vida, passando com sua elegância felina por cima da água. Os cristais em sua frente são bonitos, e brilham
+    com uma luz que ilumina os arredores, porém, ele só precisa de um no momento (talvez ele volte para pegar mais e guardar como brinquedo
+    para uso futuro). Pudim usa sua espada para quebrar um pedaço do cristal.
+    (Pudim pegou o Cristal Reluzente)
+    Pudim
+        *Tudo bem! Só mais {numero de ingredientes faltando} pra pegar! Miau!
+        (se for o ultimo ingrediente):
+        *Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!
+    Pudim pula de volta ao outro lado, e segue para a saída... até que o chão em baixo de suas patas começa a tremer! Pudim olha para trás
+    e vê...
+    (Monstro Cristalino - desenho)[nome pode mudar]
+    O que antes era uma ilha com uma formação de cristais, se ergue do lago e se revela como um grande monstro, com cristais descendo por
+    suas costas! (luta)
+    Pudim permanece de pé, como o vitorioso da grande batalha! (sucesso)
+    Pudim deixa o monstro para trás, se retirando da Mina de uma vez por todas.
+
+Casa de Italiano
+    Pudim faz seu caminho até a casa misteriosa ao lado da Torre, num primeiro olhar discreta, porém ao pular pela janela e ver o interior,
+    ele percebe, claramente, que é uma casa de italiano. Quadros de queijos, lasanhas e pizzas decoram a casa junto aos papeis de parede
+    de tipos diferentes de macarrão. A casa parece vazia entretanto, talvez o dono estava fora num restaurante? Pudim pula para dentro e
+    começa a procurar a Massa Sagrada.
+
+        *Ei, quem tá aí? Woof!
+
+    Uma voz latida corre de uma porta (há uma placa nela, escrito "Quarto")! Pudim corre para se esconder, se jogando atrás de um sofá
+    (com estampa de macarronada) e observando a figura que surge.
+
+    (Italiano - desenho)
+
+    Doguitaliano
+        *Quem tá aqui? Mi Familia não gosta de intrusos!
+        *Woof... tentando se esconder? Saiba que nós cãos italianos temos o mais apurado elfato do reino animal!
+        O Doguitaliano se prepara para farejar o intruso (você), o que fazer?
+        (1-Atacar\2-Tentar passar despercebido)
+        1-Pudim avança contra o cão excêntrico, pulando para cima dele antes que farejasse sua posição! Ataque surpresa! (luta)
+        Doguitaliano
+            *Oh, mamma mia, se não é um gato nojento! Veio r parte dviraa minha receita suprema, felino? Woof Woof!
+        Pudim
+        Doguitaliano
+            *Pudim, é? Tudo bem, não sou contra comidas agridoces, Woof! Minha receita secreta estará completa com
+            *Só se estiver fazendo um doce, Miau! Tenho certeza que tenho gosto de Pudim! você nela!
+        Pudim
+            *Receita? Por acaso teria um Massa Sagrada nessa sua receita?
+        Doguitaliano
+            *Mamma mia! Não esperava que um gato inculto como o próprio conheceria de culinaria! Pois é claro, é a receita que
+            mudará o mundo, e usará da grande Massa Sagrada como fundamento.
+        Pudim
+            *Miau! Nesse caso, passe pra cá!
+        Doguitaliano
+            *Woof Woof! Não vai ser tão fácil assim, Pudim!
+        (luta começa)
+        (sucesso)
+            Doguitaliano
+                *Arf... Arf... Droga! Diga, felino, você vai mesmo roubar a Massa Sagrada?
+            Pudim
+                *Sim! Pelo bem de Miaudade, preciso dela para levar os ratos para longe!
+            Doguitaliano
+                *Arf... nesse caso... me prometa, Pudim, que ira fazer uma receita que faz juz à culinária italiana!
+            Pudim
+                *Rum... Prometo, Dogui! Miau!
+            
+            Doguitaliano desmaia, você prossegue para o "Quarto".
+        2-Pudim tenta passar de fininho pelo cão...
+        ...mas Pudim cheira a pudim! é forte demais para passar pelo fucinho apurado do Doguitaliano! (luta)
+        ...mas o cheiro delicioso de algo no forno atrapalha o fucinho do cão! Você foge para o "Quarto"! (sucesso)
+
+    Pudim adentra o "Quarto", e logo percebe que é uma cozinha, com uma casinha de cachorro em um dos cantos.
+    Sobre uma bancada ele avista a Massa Sagrada, quentinha e apetitosa. Ele a segura, o cheiro delicioso entrando em seu fucinho.
+    Ele controla a vontade de experimentar e guarda a massa.
+    (Pudim conseguiu a Massa Sagrada!)
+    Pudim
+            *Tudo bem! Só mais {numero de ingredientes faltando} pra pegar! Miau!
+        (se for o ultimo ingrediente):
+            Tudo bem, consegui todos! Agora tenho que voltar para o Miauderijo! Miau!
+
+Lugar Misterioso
+    Pudim se aproxima da casa misteriosa. Nunca em Miaudade havia ele visto esse lugar, pode ser perigoso.
+    Chegar mais perto?
+    (1-Sim\2-Não)
+    1 - 
+    Pudim bate na porta da casa misteriosa... ninguém vem atender. Pudim percebe que a porta estava aberta e entra (sem educação).
+    Pudim
+        *Rummm... que lugar é esse?
+    Uma fumaça grossa cobre por inteiro o recinto, dificultando até ver as paredes do lugar. Vultos sombrios deixam rastros pelo ambiente esfumaçado e
+    sons estranhos arrepiam até a ponta do rabo do Pudim, que avança cautelosamente. Em meio ao breu e toda a fumaça que lacrimeja os olhos do gato, 
+    ele avista um objeto brilhante um pouco mais a frente, que parece atrair não só os olhos mas a mente de Pudim.
+    (1 - Ceder e pegar o objeto\2 - Resistir e voltar)
+        1 - Pudim chega mais perto, e estende sua pata até o objeto. Ao tocá-lo, sua mente começa a girar, e suas vistas a escurecer...
+        .
+        .
+        .
+        Pudim abre os olhos, parece q se passaram horas, ou talvez minutos? Ele percebe, em sua pata, um amuleto estranho, que não estava com ele antes.
+        Ele se levanta, e a casa misteriosa, havia desaparecido por completo. Teria sido tudo um sonho?
+        (Pudim conseguiu o Amuleto da Sorte!)
+
+        2 - O bom senso de Pudim parece falar mais alto, e ele corre para fora da casa sem olhar para trás. Ele nunca saberá o que era aquilo.
+
+    2 - Você dá meia volta e vai embora, com o rabinho entre as pernas.
+
+
+Final
+    Pudim avança por Miaudade, percebendo um vazio estranho pela cidade. O ar parece completamente parado enquanto o gato corre para o
+    Miauderijo, ele se pergunta onde foram todos os Soldados Ratos que marchavam pelas ruas, mas não permite que sua mente vague por
+    muito tempo. Logo a saída da cidade aparece a vista, e depois dela a o Miauderijo.
+
+    Pudim
+        *Rummmm... Esperava algo a mais, foi muito fácil!
+    Sr. Bigodes
+        *Pudim, você retornou!
+    Bola de Pelos
+        *Pudim... você recolheu todos os ingredientes?
+    Pudim
+        *Sim... aqui estão...
+    (Pudim entrega a Flor, a Pena, o Cristal e a Massa para o Mago Bola de Pelos)
+    Bola de Pelos
+        *Certo! Então, meu trabalho começa agora!
+
+    O gato Bola de Pelos se retira, adentrando uma sala escura com os ingredientes em patas. Pudim e Sr. Bigodes permanecem, ansiosos
+    e tensos.
+    Sr. Bigodes
+        *Pudim, se isso funcionar, Miaudade estará li--
+    ???
+        *Gatos imundos! Saiam daí agora!
+    Pudim
+        *O que? De quem é essa voz aguda e estridente?
+    Pudim e o velho Sr. Bigodes saem para fora do Miauderijo, e são encontrados por uma dupla aterrorizante.
+    Ratão
+        *Nos encontramos novamente, bichano!
+    Pudim
+        *Você! Já é tarde demais, ratão!
+    Sr. Bigodes
+        *Não pode ser! Reiqueijão, seu dentuço maldito!
+    ???
+        *Hihihi...
+    Reiqueijão, o Rei dos Ratos
+        *Hihihihihihihi!!! Simmm! Eu, o Reiqueijão (leia-se requeijão), vim prender vocês, meliantes!
+    Pudim
+        *...
+    Reiqueijão
+        *Hihihi...hiiii!
+    Pudim
+        *Ei ratão, você era o Reiqueijão desde o início?!
+    Ratão (não é o Reiqueijão)
+        *Não, gato burro! Você está na presença do mais ilustre Rei do reino animal, meu irmão! Tenha respeito.
+    Sr. Bigodes
+        *Sim, Pudim, esse é o Reiqueijão... o tirano que tomou nossa Miaudade!
+    Bola de Pelos
+        *Pudim? Sr. Bigodes? A receita está quase pronta! Onde vocês es--
+    Reiqueijão
+        *Bola de Pelos! Farei você voltar para sua cela!
+    Bolas de Pelos
+        *Rei! Droga, o que será de nós ag--
+    Pudim
+        *Você, colocar alguem numa cela? Acho mais facil pisarem em você, nanico! Hahahaha!
+    Reiqueijão
+        *O queeee?!!
+    Ratão
+        *Ora... agora você foi longe de mais, bichano! Olha como você fala com o meu irmãozinho!
+
+    (luta com ratão)
+
+    Ratão
+        *Argh... de novo, não! Irmão... fuja!
+    Reiqueijão
+        *Irmãozão!
+    Pudim
+        *Rum! Agora só falta você, Reiqueijão!
+    Bola de Pelos
+        *Pudim! O feitiço secreto que nos livrará dos ratos está pronto!
+    Pudim
+        *Ótimo! E você reizinho, vem comigo.
+    Pudim, levando o rei consigo, adentra o Miauderijo novamente. O gato mago Bola de Pelos deixa o trio aguardando por mais alguns
+    minutos, até que finalmente, ele retorna com uma grande tigela de madeira. O cheiro que emana dela é divino para o olfato dos gatos
+    ali presentes, porém, o efeito que parece ter no rei rato aparenta ser dez vezes maior.
+
+    Bola de Pelos
+        *Aqui está... o Queijo Irresistível! Quando ele for colocado em ação, nenhum rato conseguirá se segurar.
+    Pudim
+        *É claro... rum... não seria de outro jeito.
+        Mas, antes disso... O que fazer com você, Reiqueijão!?
+    O rato parece ser retirado de um transe ao ouvir seu nome
+    Reiqueijão
+        *O-O que?! 
+    Sr. Bigodes
+        *O que você sugere, Pudim?
+    Pudim
+        *Rum...
+    
+    (1 - Prende-lo na Torre            2 - Leva-lo para longe junto dos outros ratos)
+
+    case 1:
+        Pudim
+            *... sua crueldade com o Bolinha não vai passar despercebida, Reiqueijão! Os outros ratos vão para longe daqui, mas você...
+            você vai ficar!
+        Reiqueijão
+            *O que-o que quer dizer?!
+        Pudim
+            *Para a masmorra da Torre! Você ficara preso em Miaudade, até que se arrependa completamente dos seus atos... mesmo que isso
+            dure para sempre!
+        Bola de Pelos
+            *Então... preparados?...
+        Os gatos saem mais uma vez, e sob o céu escarlate do por do sol, o gato mago traz o Queijo Irresistível, e o levanta para o topo de seu 
+        cajado, o qual ele ergue e aponta ao céu.
+        Bola de Pelos
+            *Que esse Queijo irresistível e delicioso, voe ao mais distante horizonte, e leve os ratos para longe de Miaudade!
+        Ao fim das suas palavras encantadas, o Queijo decola, voando alto e rapidamente pelo céu, até sumir de vista. Pouco se passa, e inúmeros ratos,
+        todos ocupantes de Miaudade, correm na direção em que o laticinio partiu. A multidão logo sai de vista, e o gosto do sucesso chega à lingua
+        de Pudim. Miaudade está livre novamente.
+        Pudim
+            *E você, Reiqueijão... para a masmorra!
+        Pudim carrega o pequeno ratinho pelas ruas de Miaudade, enquanto ele grita e pede clemência. Os dois chegam até a Torre, o felino puxando o 
+        roedor escada abaixo, até a cela onde o Gato Mago Bola de Pelos esteve preso.
+        Pudim  
+            *Esse é o seu novo lar... Rei do queijão...
+
+        Fim
+
+        Você salvou Miaudade e retornou aos gatos o seu lar, parabéns!
+
+        Obrigado por jogar nosso jogo!
+
+
+    case 2:
+        Pudim
+            *Seus atos em Miaudade são imperdoáveis, Reiqueijão... mas, terei piedade de você! Você sairá da nossa cidade, junto dos seus
+            outros ratos!
+        Sr. Bigodes
+            *Pudim... que mais nobre ação! Fico feliz... em ver o gato que você se tornou!
+        Bola de Pelos
+            *Então... preparados?...
+        Os gatos saem mais uma vez, e sob o céu escarlate do por do sol, o gato mago traz o Queijo Irresistível, e o levanta para o topo de seu 
+        cajado, o qual ele ergue e aponta ao céu.
+        Bola de Pelos
+            *Que esse Queijo irresistível e delicioso, voe ao mais distante horizonte, e leve os ratos para longe de Miaudade!
+        Ao fim das suas palavras encantadas, o Queijo decola, voando alto e rapidamente pelo céu, até sumir de vista. Pouco se passa, e inúmeros ratos,
+        todos ocupantes de Miaudade, correm na direção em que o laticinio partiu. A multidão logo sai de vista, e o gosto do sucesso chega à lingua
+        de Pudim. Miaudade está livre novamente.
+        Pudim
+            *E você, Reiqueijão... vá, e não volte nunca mais!
+        Pudim solta dos bracinhos frágeis do rato, que sai correndo na direção de seus compatriotas, sem olhar para trás.
+
+        Fim
+
+        Você salvou Miaudade e retornou aos gatos o seu lar, parabéns!
+
+        Obrigado por jogar nosso jogo!
+

@@ -2,9 +2,8 @@
 import sys
 import data
 
-#introdução (diálogo)
-frase = ' Inúmeros gatinhos dormem silenciosa (e preguiçosamente) no Miauderijo...   Enquanto isso, um felino solitario se levanta'
-data.animar(frase)
+#introdução
+data.animar('Inúmeros gatinhos dormem silenciosa (e preguiçosamente) no Miauderijo...   Enquanto isso, um felino solitario se levanta')
 input()
 data.clear()
 

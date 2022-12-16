@@ -7,7 +7,7 @@ data.animar('\n Entrando em Torre')
 data.sleep(2.0)
 data.clear()
 data.sleep(1.0)
-data.animar('Pudim põe suas patas para bom uso, correndo até Miaudade.\n Dentro da cidade, ele se depara com varios Soldados Ratos, os lacaios do Reiqueijão. O que fazer?')
+data.animar('Pudim põe suas patas para bom uso, correndo até Miaudade.\nDentro da cidade, ele se depara com varios Soldados Ratos, os lacaios do Reiqueijão. O que fazer?')
 data.animar('\n\n1-Atacar           2-Passar despercebido')
 escolha = data.valInt('\n             ')
 data.clear()
@@ -31,12 +31,12 @@ match escolha:
         data.clear()
 
 data.falas('txtes/pudim', 'Pudim', 'Moleza!')
-data.animar(' O resto do caminho até a Torre é livre. Pudim abre suas grandes portas (com dificuldade, por não ter dedos) e começa a procurar a entrada para a masmorra.\n Há dois caminhos na sua frente...\n')
+data.animar(' O resto do caminho até a Torre é livre. Pudim abre suas grandes portas (com dificuldade, por não ter dedos) e começa a procurar a entrada para a masmorra.\nHá dois caminhos na sua frente...')
 data.animar('\n\n1-Esquerda           2-Direita')
 escolha = data.valInt('\n              ')
 match escolha:
     case 1:
-        data.animar('Pudim segue um longo corredor, se distraindo momentaneamente quando vê um mosquito.\n Ele encontra um grande rato, dormindo, porém ao seu lado tem um objeto dourado brilhante. Pudim quer o objeto brilhante.\n O que fazer?')
+        data.animar('Pudim segue um longo corredor, se distraindo momentaneamente quando vê um mosquito.\nMais a frente, ele encontra um grande rato, dormindo, porém ao seu lado tem um objeto dourado brilhante. Pudim quer o objeto brilhante.\nO que fazer?')
         data.animar('\n1-Atacar           2-Tentar pegar despercebido')
         escolha = data.valInt('\n             ')
         data.clear()
@@ -50,11 +50,11 @@ match escolha:
                 data.animar('O inimigo dorme de novo (por outro motivo dessa vez). Você se sente um pouco culpado.\n')
                 input ()
                 data.clear()
-                data.animar(' Você passa por ele e pega o objeto brilhante, com ele em mãos, você percebe que o objeto é na verdade uma chave. Ele não parece brilhar tanto assim mais')
+                data.animar('Você passa por ele e pega o objeto brilhante, com ele em mãos, você percebe que o objeto é na verdade uma chave. Ele não parece brilhar tanto assim mais')
                 input ()
                 data.clear()
-                data.falas('txtes/chave', 'Chave da torre', 'você recebeu chave!')
-                chave = True
+                data.falas('txtes/chave', '', '(Pudim pegou a Chave!)')
+                data.temChave = True
                 input ()
                 data.clear()
                 data.animar('Você retorna pelo corredor, até a sala que estava antes. O que fazer?\n1- esquerda             2-Direita')
@@ -83,13 +83,13 @@ match escolha:
                 data.animar('Com ele em mãos, você percebe que o objeto brilhante é na verdade uma chave. Ele não parece brilhar tanto assim mais')
                 input ()
                 data.clear()
-                data.falas('txtes/chave', 'Chave da torre', 'você recebeu chave!')
-                chave = True
+                data.falas('txtes/chave', '', '(Pudim pegou a Chave!)')
+                data.temChave = True
                 data.animar('Você retorna pelo corredor, até a sala que estava antes. O que fazer?\n1- esquerda             2-Direita')
                 escolha = data.valInt('\n             ')
                 data.clear()
                 while escolha == 1:
-                    data.animar('Você percebe que acaboou de sair desta sala então retorna pelo corredor, até a sala que estava antes. O que fazer?\n1- esquerda             2-Direita')
+                    data.animar('Você percebe que acabou de sair desta sala então retorna pelo corredor, até a sala que estava antes. O que fazer?\n1- esquerda             2-Direita')
                     escolha = data.valInt('\n             ')
                     data.clear()
                     data.animar('Pudim segue abaixo por uma escada, alguns lances depois ele se surpreende ao dar de cara com um enorme rato, que o vê antes que Pudim pudesse reagir.')
@@ -109,14 +109,14 @@ data.luta(data.ratão)
 data.animar('O Ratão cai desacordado, abrindo espaço para a porta atrás dele.')
 input()
 data.clear()
-while chave == False:
+while data.temChave == False:
     data.animar('Mas a porta está trancada! Hum, onde será que está a chave?')
     input()
     data.clear()
     data.animar('Você retorna, subindo a escada para a sala que estava antes.')
     input()
     data.clear()
-    data.animar('Pudim segue um longo corredor, se distraindo momentaneamente quando vê um mosquito.\n Ele encontra um grande rato, dormindo, porém ao seu lado tem um objeto dourado brilhante. Pudim quer o objeto brilhante.\n O que fazer?')
+    data.animar('Pudim segue um longo corredor, se distraindo momentaneamente quando vê um mosquito.\nEle encontra um grande rato, dormindo, porém ao seu lado tem um objeto dourado brilhante. Pudim quer o objeto brilhante.\nO que fazer?')
     data.animar('\n1-Atacar           2-Tentar pegar despercebido')
     escolha = data.valInt('\n             ')
     data.clear()
@@ -126,14 +126,14 @@ while chave == False:
             input ()
             data.clear()
             #luta soldado
-            data.animar('O inimigo dorme de novo (por outro motivo dessa vez). Você se sente um pouco culpado.\n')
+            data.animar('O inimigo dorme de novo (por outro motivo dessa vez). Você se sente um pouco culpado.')
+            input()
+            data.clear()
+            data.animar('Você passa por ele e pega o objeto brilhante, com ele em mãos, você percebe que o objeto é na verdade uma chave. Ele não parece brilhar tanto assim mais')
             input ()
             data.clear()
-            data.animar(' Você passa por ele e pega o objeto brilhante, com ele em mãos, você percebe que o objeto é na verdade uma chave. Ele não parece brilhar tanto assim mais')
-            input ()
-            data.clear()
-            data.falas('txtes/chave', 'Chave da torre', 'você recebeu chave!')
-            chave = True
+            data.falas('txtes/chave', '', '(Pudim pegou a Chave!)')
+            data.temChave = True
             input ()
             data.clear()
         case 2:
@@ -149,8 +149,8 @@ while chave == False:
                 data.animar('Com ele em mãos, você percebe que o objeto brilhante é na verdade uma chave. Ele não parece brilhar tanto assim mais')
                 input ()
                 data.clear()
-                data.falas('txtes/chave', 'Chave da torre', 'você recebeu chave!')
-                chave = True
+                data.falas('txtes/chave', '', '(Pudim pegou a Chave!)')
+                data.temChave = True
 data.animar('Você usa a Chave!')
 input()
 data.clear()
@@ -164,7 +164,7 @@ data.animar('Abrir?\n1-Abrir           2-Não abrir')
 escolha = data.valInt()
 data.clear()
 match escolha:
-    case 2:
+    case 1:
         data.falas('txtes/pudim', 'Pudim', 'Vim resgatar você, Bola de Pelos, Miau!')
         data.animar('Um gato velinho, segurando um grande cajado, surje das sombras da cela.')
         input()
@@ -173,9 +173,25 @@ match escolha:
         data.falas('txtes/pudim', 'Pudim', '...')
         data.falas('txtes/gatomago', 'Mago Bola de Pelos', '...')
         data.falas('txtes/pudim', 'Pudim', '...')
-        data.falas('txtes/gatomago', 'Mago Bola de Pelos', 'Então...\n Por que interrompeu minha soneca, Pudim?')
-        data.falas('txtes/pudim', 'Pudim', 'Eu vim te resgatar, velho caduco!... quer dizer, Mago Bola de Pelos!\n Os ratos tomaram conta da nossa cidade, e os gatos de Miaudade foram exilados pro Miauderijo! Precisamos da sua ajuda.')
-        data.falas('txtes/gatomago', 'Mago Bola de Pelos', 'Hmm... a situação aparenta mais critica do que imaginei...\n Pudim, poderia me levar ao Miauderijo?')
-        data.sleep (2.0)
-data.clear()
-data.chamarMapa()
+        data.falas('txtes/gatomago', 'Mago Bola de Pelos', 'Então...\nPor que interrompeu minha soneca, Pudim?')
+        data.falas('txtes/pudim', 'Pudim', 'Eu vim te resgatar, velho caduco!... quer dizer, Mago Bola de Pelos!\nOs ratos tomaram conta da nossa cidade, e os gatos de Miaudade foram exilados pro Miauderijo! Precisamos da sua ajuda.')
+        data.falas('txtes/gatomago', 'Mago Bola de Pelos', 'Hmm... a situação aparenta mais critica do que imaginei...\nPudim, poderia me levar ao Miauderijo?')
+        data.falas('txtes/pudim', 'Pudim', 'Rum... vamos lá!')
+        data.sleep(2.0)
+        data.clear()
+        import miauderijo
+    case 2:
+        data.animar('Pudim repensa a jornada em sua frente. O chamado a ação, os desafios que o encontrariam se continuasse a seguir aquele caminho.\
+        \n"Por que eu?" ele pensa, indignado. Ele joga a chave no chão, e retorna pelo mesmo caminho que veio, sem olhar para trás. Pudim\
+        \nfoge de Miaudade, não passando no Miauderijo para se despedir de seu avô ou de nenhum dos outros gatos.')
+        input()
+        data.clear()
+        data.animar('A grandiosa hístoria de Pudim, e o ato valente que ele fez que com certeza teria mudado o rumo dos gatos de todo o mundo, nunca\
+        \nse realizou para que um dia fosse contada. Nunca mais ouviram falar do Pudim novamente.')
+        input()
+        data.clear()
+        data.animar('Fim.')
+        data.sleep(2.0)
+        input()
+        data.clear()
+        import Miaudade

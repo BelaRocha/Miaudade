@@ -185,7 +185,7 @@ def chamarMapa():
             case 0:
                 if temCristal and temFlor and temMassa and temPena == True:
                     clear()
-                    import miauderijo
+                    import final
                 else:
                     animar("Não seria legal voltar de patas vazias!")
                     input()
@@ -358,7 +358,7 @@ def morreu():
     animar('                       Você falhou... Miaudade cai sob o caos em sua ausência...')
     input('\n                        Pressione Enter para voltar para o Menu Principal...')
     sleep(0.25)
-    import menu
+    import Miaudade
                             
 class inventario:
 

@@ -15,18 +15,21 @@ if data.temPena == False:
     data.animar('')
     data.animar('\n\n1-Atacar           2-Passar despercebido')
     escolha = data.valInt('\n             ')
-    data.animar('Você pula no pombo e arranca uma pena.')
-    input()
-    data.clear()
-    data.falas('txtes/pombo', 'Pombo', 'Ei, o que pensa que tá fazendo? Prometo que vou te processar, seu gato imundo!')
-    data.animar('O Pombo parece bravo. Ele sai voando para longe.')
-    input()
-    data.clear()
-    data.falas('txtes/pena', 'Pudim conseguiu a Pena Suja!', '')
-    data.temPena == True
-    data.animar('Você não faz nada. Parece uma oportunidade desperdiçada.')
-    input()
-    data.clear()
+    match escolha:
+        case 1:
+            data.animar('Você pula no pombo e arranca uma pena.')
+            input()
+            data.clear()
+            data.falas('txtes/pombo', 'Pombo', 'Ei, o que pensa que tá fazendo? Prometo que vou te processar, seu gato imundo!')
+            data.animar('O Pombo parece bravo. Ele sai voando para longe.')
+            input()
+            data.clear()
+            data.falas('txtes/pena', '(Pudim pegou a Pena Suja!)', '')
+            data.temPena == True
+        case 2:
+            data.animar('Você não faz nada. Parece uma oportunidade desperdiçada.')
+            input()
+            data.clear()
 if data.temFlor == False:
     data.animar('Pudim continua o seu caminho pela floresta, passando entre as arvores enquanto procura a flor até que encontra um Soldado Rato no caminho!\
         \nEle parece distraido cortando lenha, o que fazer?')
@@ -46,7 +49,7 @@ if data.temFlor == False:
 
     data.animar('Pudim anda por o que parecem horas para suas perninhas curtas de gatinho, até que, num caminho ingrime e escuro, ele vê,\
         \niluminada por um unico feiche de luz que corta pela copa das árvores, a Flor Ancestral! Pudim pula em sua direção, porém!')
-        #luta com dinoplanta
+    data.luta(data.dinoPlanta)
     data.animar('A Dinoplanta mítica de lenda cai derrotada de volta ao chão! Você segura a Flor Ancestral em suas patas')
     input()
     data.clear()

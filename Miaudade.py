@@ -11,7 +11,7 @@ def animar():
 		for letra in frase:
 			print(letra, end='')
 			sys.stdout.flush()
-			sleep(0.08)
+			sleep(0.065)
 		break
 
 while True:
@@ -23,7 +23,10 @@ while True:
     data.clear()
     match option:
         case 1:
-            frase = '   Os gatos viviam felizes há muito tempo em Miaudade, onde tinham comida e camas quentinhas para dormirem o dia todo. Um dia, os soldados do Rato Reiqueijão \ninvadiram e ocuparama cidade, expulsando todos os gatos. O Rei Rato sabia que o único felino que poderia tira-lo do poder era o Mago Bola de Pelos e então, por medo, ele o aprisionou em uma torre perto da Floresta Macabra. Os gatos felizmente conseguiram  construir um esconderijo não muito longe da cidade, onde também tinham camas quentinhas, por isso muitos gatos perderam a vontade de lutar e decidiram continuar se escondendo...'
+            frase = 'Os gatos viviam felizes há muito tempo em Miaudade, onde tinham comida e camas quentinhas para dormirem o dia todo. Um dia, os soldados do Rato Reiqueijão\
+                    \ninvadiram e ocuparam a cidade, expulsando todos os gatos. O Rei Rato sabia que o único felino que poderia tira-lo do poder era o Mago Bola de Pelos e então,\
+                    \npor medo, ele o aprisionou em uma torre perto da Floresta Macabra. Os gatos felizmente conseguiram  construir um esconderijo não muito longe da cidade,\
+                    \nonde também tinham camas quentinhas, por isso muitos gatos perderam a vontade de lutar e decidiram continuar se escondendo...'
             animar()
             data.clear()
             from jogo import inicio
