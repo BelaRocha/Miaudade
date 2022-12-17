@@ -27,5 +27,5 @@ Ao iniciar o aplicativo deve-se alterar a fonte do terminal para uma que suporte
 -Feito por Alvaro Rodrigues e Izabela Rocha
 
 ------------------------------------------------------------------------------------------------------------------------------------  
-Apesar de ser um programa pequeno, pedimos para que não altere o codigo
+Apesar de ser um programa pequeno, pedimos para que não altere o codigo.
 Divirtam-se em Miaudade e boa sorte
