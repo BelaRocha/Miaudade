@@ -47,7 +47,7 @@ if fight == True:
                 \nmudará o mundo, e usará da grande Massa Sagrada como fundamento.')
     data.falas('txtes/pudim', 'Pudim', 'Miau! Nesse caso, passe pra cá!')
     data.falas('txtes/italiano', 'Doguitaliano', 'Woof Woof! Não vai ser tão fácil assim, Pudim!')
-    data.luta(data.italiano)
+    data.chamarLuta(data.italiano)
     data.falas('txtes/italiano', 'Doguitaliano', 'Arf... Arf... Droga! Diga, felino, você vai mesmo roubar a Massa Sagrada?')
     data.falas('txtes/pudim', 'Pudim', 'Sim! Pelo bem de Miaudade, preciso dela para levar os ratos para longe!')
     data.falas('txtes/italiano', 'Doguitaliano', 'Arf... nesse caso... me prometa, Pudim, que ira fazer uma receita que faz juz à culinária italiana!')

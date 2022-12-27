@@ -47,7 +47,7 @@ data.falas('txtes/pudim', 'Pudim', 'Você, colocar alguem numa cela? Acho mais f
 data.falas('txtes/reiqueijão', 'Reiqueijão', 'O queeeeeeeeeeeeeeeeeeeee?!!!!!')
 data.falas('txtes/ratão', 'Ratão', 'Ora... agora você foi longe de mais, bichano! Olha como você fala com o meu irmãozinho!')
 
-#luta com ratão
+data.chamarLuta(data.ratãoFinal)
 
 data.falas('txtes/ratão', 'Ratão', 'Argh... de novo, não! Irmão... fuja!')
 data.falas('txtes/reiqueijão', 'Reiqueijão', 'Irmãozão!')

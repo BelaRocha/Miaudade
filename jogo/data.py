@@ -109,14 +109,15 @@ def sortefuga():
     else:
         fug = listafug[0]
     if fug == True:
-        animar('\nSucesso!')
+        sleep(0.5)
     else:
-        animar('\nFalha!')
+        sleep(0.5)
     return fug
 
 def ataquePudim():
     animar("\nPudim prepara sua espada para um golpe!")
     input('\nPressione Enter para atacar!')
+    animar('\nPudim desfere um corte com sua espada!')
     sleep(0.25)
     dano = sorteAtaque(eInimigo = False)
     if dano <= 0:
@@ -243,56 +244,74 @@ def chamarMapa():
                 clear()
                 continue 
 
-def luta(inimigo): #menu principal quando começam encontros com inimigos
-    clear()
+def chamarLuta(inimigo):
     while True:
-        dotArt(inimigo['txt'])
-        animar(inimigo['chamada'])
-        print(f"\n----------------------------------\
-        \n1 - Atacar\
-        \n2 - Pudim\
-        \n3 - Checar Inimigo")
-        menuOpcao = valInt("Insira opção: ")
-        match menuOpcao:
+        opcao = menuLutaChamada(inimigo)
+        match opcao:
             case 1:
-                clear()
-                pudimHp = 10
-                while True:
-                    danoPudim = ataquePudim()
-                    inimigo['hp'] -= danoPudim
-                    animar(f"\nO HP do {inimigo['nome']} é: {inimigo['hp']}!")
-                    if inimigo['hp'] < 1:
-                        break
-                    danoInimigo = ataqueInimigo(inimigo)
-                    pudimHp -= danoInimigo
-                    if danoInimigo > 0:
-                        animar(f"\nOuch! o {inimigo['nome']} te deu {danoInimigo}! Seu HP é: {pudimHp}!")
-                    if pudimHp < 1:
-                        break
-                if pudimHp >= 1: 
-                    animar('\nSucesso!')
-                    break
+                sucesso = luta(inimigo)
+                if sucesso:
+                    print('\nSucesso!\n')
+                    input()
+                    clear()
+                    return
                 else:
+                    print('\nVocê falhou!')
                     morreu()
-                    break  
             case 2:
-                pudim(inimigo)
+                pudim()
+                continue
             case 3:
-                clear()
-                dotArt(inimigo['txt'])
-                print(f"{inimigo['nome']}\
-                    \n----------------------------\
-                    \n{inimigo['descricao']}\
-                    \nHP: {inimigo['hp']}\
-                    \nAtaque: {inimigo['atk']}")
-                input()
-                continue
-            case _:
-                input("Opção inválida. Pressione Enter para voltar... ")
+                checkInimigo(inimigo)
                 continue
 
+def menuLutaChamada(inimigo):
+    dotArt(inimigo['txt'])
+    animar(inimigo['chamada'])
+    print(f"\n----------------------------------\
+    \n1 - Atacar\
+    \n2 - Pudim\
+    \n3 - Checar Inimigo")
+    menuOpcao = valInt("Insira opção: ")
+    return menuOpcao
 
-def pudim(inimigo): #menu do inventario do pudim
+
+def checkInimigo(inimigo):
+    dotArt(inimigo['txt'])
+    print(f"{inimigo['nome']}\
+        \n----------------------------\
+        \n{inimigo['descricao']}\
+        \nHP: {inimigo['hp']}\
+        \nAtaque: {inimigo['atk']}")
+    input()
+
+def luta(inimigo):
+    inimigoHp = inimigo['hp']
+    pudimHp = 15
+    while True:
+        danoPudim = ataquePudim()
+        inimigoHp -= danoPudim
+        animar(f"\nO HP do {inimigo['nome']} é: {inimigoHp}!\n")
+        if inimigoHp < 1:
+            break
+        else:
+            danoInimigo = ataqueInimigo(inimigo)
+            pudimHp -= danoInimigo
+            if danoInimigo > 0:
+                animar(f"\nOuch! o {inimigo['nome']} te deu {danoInimigo}! Seu HP é: {pudimHp}!\n")
+            if pudimHp < 1:
+                break
+            else:
+                continue
+    if pudimHp >= 1: 
+        sucesso = True
+        return sucesso
+    else:
+        sucesso = False
+        return sucesso
+
+
+def pudim(): #menu do inventario do pudim
     clear()
     while True:
         dotArt('txtes/pudim')
@@ -308,7 +327,7 @@ def pudim(inimigo): #menu do inventario do pudim
                 dotArt('txtes/pudim')
                 print("Pudim - sobrenome: de Limão\
                     \n-----------------------------\
-                    \nHP: 20 - Não deixe chegar a 0\
+                    \nHP: 15 - Não deixe chegar a 0\
                     \nForça: 3 - Bem forte, para um gatinho\
                     \nAtaque: 5 - Sua espada é sua maior aliada\
                     \nAgilidade: 6 - Jovem e flexível, um felino admirável")
@@ -361,7 +380,7 @@ def pudim(inimigo): #menu do inventario do pudim
                     continue
             case 3:
                 clear()
-                luta(inimigo)
+                return
             case _:
                 input("Opção inválida. Pressione Enter para voltar... ")
                 continue
